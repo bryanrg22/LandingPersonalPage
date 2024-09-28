@@ -22,12 +22,20 @@ export default function LandingPage() {
           <header className="py-6">
             <nav className="flex justify-between items-center">
               <div className="text-2xl font-bold">BR</div>
-              <div className="space-x-4">
-                <a href="#" className="hover:text-gray-300">Activity</a>
-                <a href="#" className="hover:text-gray-300">Experience</a>
-                <a href="#" className="hover:text-gray-300">Projects</a>
+              <div className="space-x-6">
+                <a href="#activity" className="hover:text-gray-300">Activity</a>
+                <a href="#experience" className="hover:text-gray-300">Experience</a>
+                <a href="#projects" className="hover:text-gray-300">Projects</a>
+                <a href="#" className="hover:text-gray-300">Skills</a>
                 <a href="#" className="hover:text-gray-300">Contact</a>
-                <a href="#" className="bg-white text-gray-900 px-4 py-2 rounded-full hover:bg-gray-200 transition-colors">Resume</a>
+                <a 
+                    href="/resume.pdf" 
+                    className="bg-white text-gray-900 px-4 py-2 rounded-full hover:bg-gray-200 transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                    Resume
+                </a>
               </div>
             </nav>
           </header>
@@ -50,7 +58,7 @@ export default function LandingPage() {
                 <Github className="mr-2" size={20} />
                 GitHub
               </a>
-              <a href="https://usc.joinhandshake.com/profiles/59199219" className="flex items-center justify-center border border-white p-2 hover:bg-white hover:text-gray-900 transition-colors" target="_blank">
+              <a href="https://usc.joinhandshake.com/profiles/59199219" className="flex items-center justify-center border border-white p-2 hover:bg-white hover:text-gray-900 transition-colors" target="_blank" rel="noopener noreferrer">
                 <Handshake className="mr-2" size={20} />
                 Handshake
               </a>
