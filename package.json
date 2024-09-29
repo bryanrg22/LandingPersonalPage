@@ -2,11 +2,16 @@
   "name": "my-project",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://bryanrg22.github.io/LandingPersonalPage",
+  "homepage": "https://bryanrg22.github.io",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+    
   },
   "dependencies": {
     "emailjs-com": "^3.2.0",
