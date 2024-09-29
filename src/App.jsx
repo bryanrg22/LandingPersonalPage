@@ -67,26 +67,34 @@ export default function LandingPage() {
       <div className="min-h-screen flex flex-col">
         <Header scrollToSection={scrollToSection} refs={refs} />
 
-        <main className="flex-grow flex items-center justify-center">
-          <div className="text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 tracking-tight whitespace-nowrap">
-              BRYAN RAMIREZ-GONZALEZ
+        <main className="flex-grow flex items-center justify-center px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-5xl mx-auto">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 tracking-tight">
+              <span className="inline-block">BRYAN</span>{' '}
+              <span className="inline-block">RAMIREZ-GONZALEZ</span>
             </h1>
-            <p className="text-xl mb-8 max-w-3xl mx-auto">
-              <span className="text-blue-400">First-Generation Latino Software Developer</span> and <span className="text-green-400">First-Year Student</span> studying at <span className="text-red-400">The University of Southern California</span>
+            <p className="text-lg sm:text-xl mb-8 max-w-3xl mx-auto">
+              <span className="text-blue-400 block sm:inline">First-Generation Latino Software Developer</span>
+              <span className="hidden sm:inline"> and </span>
+              <span className="text-green-400 block sm:inline">First-Year Student</span>
+              <span className="block sm:inline"> studying at </span>
+              <span className="text-red-400 block sm:inline">The University of Southern California</span>
             </p>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
               <a href="https://www.linkedin.com/in/bryanrg22" className="flex items-center justify-center border border-white p-2 hover:bg-white hover:text-gray-900 transition-colors" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="mr-2" size={20} />
-                LinkedIn
+                <span className="sm:hidden">LinkedIn</span>
+                <span className="hidden sm:inline">LinkedIn</span>
               </a>
               <a href="https://www.github.com/bryanrg22" className="flex items-center justify-center border border-white p-2 hover:bg-white hover:text-gray-900 transition-colors" target="_blank" rel="noopener noreferrer">
                 <Github className="mr-2" size={20} />
-                GitHub
+                <span className="sm:hidden">GitHub</span>
+                <span className="hidden sm:inline">GitHub</span>
               </a>
               <a href="https://usc.joinhandshake.com/profiles/59199219" className="flex items-center justify-center border border-white p-2 hover:bg-white hover:text-gray-900 transition-colors" target="_blank" rel="noopener noreferrer">
                 <Handshake className="mr-2" size={20} />
-                Handshake
+                <span className="sm:hidden">Handshake</span>
+                <span className="hidden sm:inline">Handshake</span>
               </a>
             </div>
           </div>
