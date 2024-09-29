@@ -4,6 +4,10 @@ export default async function handler(req, res) {
   if (req.method === 'POST') {
     const { name, email, message } = req.body;
 
+    // Log the environment variables (be careful with this in production)
+    console.log('EMAIL_USER:', process.env.EMAIL_USER);
+    console.log('EMAIL_PASS is set:', !!process.env.EMAIL_PASS);
+
     // Create a transporter using SMTP
     let transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
@@ -17,9 +21,9 @@ export default async function handler(req, res) {
 
     try {
       // Send mail with defined transport object
-      await transporter.sendMail({
-        from: process.env.EMAIL_USER, // Your email
-        to: process.env.EMAIL_USER, // Your email
+      let info = await transporter.sendMail({
+        from: process.env.EMAIL_USER,
+        to: process.env.EMAIL_USER,
         subject: "New Contact Form Submission",
         text: `
           Name: ${name}
@@ -33,10 +37,11 @@ export default async function handler(req, res) {
         `,
       });
 
+      console.log("Message sent: %s", info.messageId);
       res.status(200).json({ message: "Email sent successfully" });
     } catch (error) {
-      console.error(error);
-      res.status(500).json({ message: "Failed to send email" });
+      console.error("Error sending email:", error);
+      res.status(500).json({ message: "Failed to send email", error: error.message });
     }
   } else {
     res.setHeader('Allow', ['POST']);

@@ -25,7 +25,7 @@ export default function ContactMe() {
     setError('');
 
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch('/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -33,14 +33,17 @@ export default function ContactMe() {
         body: JSON.stringify(formData),
       });
 
+      const data = await response.json();
+
       if (response.ok) {
         setIsSubmitted(true);
         setFormData({ name: '', email: '', message: '' });
       } else {
-        throw new Error('Failed to send message');
+        throw new Error(data.message || 'Failed to send message');
       }
     } catch (error) {
-      setError('Failed to send message. Please try again later.');
+      console.error("Error in handleSubmit:", error);
+      setError(`Failed to send message: ${error.message}`);
     } finally {
       setIsSubmitting(false);
     }
