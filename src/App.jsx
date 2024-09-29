@@ -1,23 +1,57 @@
-import React from 'react'
+import React, { useRef, useCallback } from 'react'
 import { Github, Linkedin, Handshake } from "lucide-react"
 import MyActivity from './Activity'
 import WorkExperience from './WorkExperience'
 import Projects from './Projects'
 import Skills from './Skills'
+import Awards from './Awards'
 import Contact from './ContactMe'
 import MouseIcon from './MouseIcon';
 import Footer from './Footer';
 import './mouseIcon.css';
 
-const ScrollMouseIcon = () => (
+// Easing function
+const easeInOutQuad = t => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+
+const ScrollMouseIcon = ({ scrollToSection, targetRef }) => (
   <div className="w-full flex justify-center mb-20">
-    <a href="#activity">
+    <button onClick={() => scrollToSection(targetRef)} className="bg-transparent border-none cursor-pointer">
       <MouseIcon />
-    </a>
+    </button>
   </div>
 );
 
 export default function LandingPage() {
+  const activityRef = useRef(null);
+  const experienceRef = useRef(null);
+  const projectsRef = useRef(null);
+  const skillsRef = useRef(null);
+  const awardsRef = useRef(null);
+  const contactRef = useRef(null);
+
+  const scrollToSection = useCallback((elementRef) => {
+    const startPosition = window.pageYOffset;
+    const targetPosition = elementRef.current.getBoundingClientRect().top + window.pageYOffset;
+    const distance = targetPosition - startPosition;
+    const duration = 1000; // Adjust this value to change the scroll speed
+    let start = null;
+
+    const step = (timestamp) => {
+      if (!start) start = timestamp;
+      const progress = timestamp - start;
+      const percentage = Math.min(progress / duration, 1);
+      const easePercentage = easeInOutQuad(percentage);
+
+      window.scrollTo(0, startPosition + distance * easePercentage);
+
+      if (progress < duration) {
+        window.requestAnimationFrame(step);
+      }
+    };
+
+    window.requestAnimationFrame(step);
+  }, []);
+
   return (
     <div className="bg-gray-900 text-white font-sans">
       <div className="min-h-screen flex flex-col">
@@ -26,12 +60,12 @@ export default function LandingPage() {
             <nav className="flex justify-between items-center">
               <div className="text-2xl font-bold">BR</div>
               <div className="space-x-7">
-                <a href="#activity" className="hover:text-gray-300">Activity</a>
-                <a href="#experience" className="hover:text-gray-300">Experience</a>
-                <a href="#projects" className="hover:text-gray-300">Projects</a>
-                <a href="#" className="hover:text-gray-300">Skills</a>
-                <a href="#" className="hover:text-gray-300">Awards</a>
-                <a href="#" className="hover:text-gray-300">Contact</a>
+                <button onClick={() => scrollToSection(activityRef)} className="hover:text-gray-300">Activity</button>
+                <button onClick={() => scrollToSection(experienceRef)} className="hover:text-gray-300">Experience</button>
+                <button onClick={() => scrollToSection(projectsRef)} className="hover:text-gray-300">Projects</button>
+                <button onClick={() => scrollToSection(skillsRef)} className="hover:text-gray-300">Skills</button>
+                <button onClick={() => scrollToSection(awardsRef)} className="hover:text-gray-300">Awards</button>
+                <button onClick={() => scrollToSection(contactRef)} className="hover:text-gray-300">Contact</button>
                 <a 
                     href="/resume.pdf" 
                     className="bg-white text-gray-900 px-4 py-2 rounded-full hover:bg-gray-200 transition-colors"
@@ -70,26 +104,30 @@ export default function LandingPage() {
           </div>
         </main>
 
-        <ScrollMouseIcon />
+        <ScrollMouseIcon scrollToSection={scrollToSection} targetRef={activityRef} />
       </div>
 
-      <div id="activity">
+      <div id="activity" ref={activityRef}>
         <MyActivity />
       </div>
 
-      <div id="experience">
+      <div id="experience" ref={experienceRef}>
         <WorkExperience />
       </div>
 
-      <div id="projects">
+      <div id="projects" ref={projectsRef}>
         <Projects />
       </div>
 
-      <div id="skills">
+      <div id="skills" ref={skillsRef}>
         <Skills />
       </div>
 
-      <div id="contact">
+      <div id="awards" ref={awardsRef}>
+        <Awards />
+      </div>
+      
+      <div id="contact" ref={contactRef}>
         <Contact />
       </div>
 

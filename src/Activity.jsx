@@ -6,9 +6,10 @@ const activities = {
       { name: "Cal Hacks 11.0", description: "", date: "OCT 18 - OCT 20, 2024", status: "UPCOMING", location: "The Metreon San Francisco, California", image: "/activityLogos/berkeleyLogo.png?height=50&width=50" },
       { name: "HackHarvard", description: "", date: "OCT 11 - OCT 13, 2024", status: "UPCOMING", location: "Cambridge, Massachusetts", image: "/activityLogos/harvardLogo.png?height=50&width=50" },
       { name: "YHacks", description: "Yale", date: "OCT 4 - OCT 6, 2024", status: "UPCOMING", location: "New Haven, Connecticut", image: "/activityLogos/yaleLogo.png" },
-      { name: "HackGT", description: "Georgia Tech", date: "SEPT 27 - SEPT 29, 2024", status: "UPCOMING", location: "Atlanta, Georgia", image: "/activityLogos/georgiatechLogo.png?height=50&width=50" },
+      { name: "HackGT", description: "Georgia Tech", date: "SEPT 27 - SEPT 29, 2024", status: "Flight Canceled Due to Hurricane Helene", location: "Atlanta, Georgia", image: "/activityLogos/georgiatechLogo.png?height=50&width=50" },
       { name: "PennApps XXV", description: "UPenn", date: "SEPT 20 - SEPT 22, 2024", status: "COMPLETED", location: "Philadelphia, Pennsylvania", image: "/activityLogos/upennLogo.png?height=50&width=50" },
       { name: "UC Berkeley AI Hackathon", description: "", date: "JUN 22 - JUN 23, 2024", status: "COMPLETED", location: "Berkeley, California", image: "/activityLogos/berkeleyLogo.png?height=50&width=50" },
+      { name: "AstroHacks", description: "High Shool Hackathon", date: "APR 13, 2024", status: "COMPLETED", location: "Irvine, California", image: "/activityLogos/astrohacksLogo.jpeg?height=50&width=50" },
     ],
     Organizations: [
       { name: "CodePath", description: "Technical Interview Course Prep - Fall Cohort", date: "", status: "", location: "", image: "/activityLogos/codepathLogo.jpeg?height=50&width=50" },
@@ -87,6 +88,7 @@ export default function MyActivity() {
                   <p className={`text-sm font-medium mb-2 ${
                     activity.status === 'COMPLETED' ? 'text-green-400' :
                     activity.status === 'UPCOMING' ? 'text-yellow-400' :
+                    activity.status === 'Flight Canceled Due to Hurricane Helene' ? 'text-red-400' :
                     'text-gray-400'
                   }`}>
                     {activity.status}
