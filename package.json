@@ -2,7 +2,7 @@
   "name": "my-project",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://bryanrg22.github.io",
+  "homepage": "https://bryanrg22.github.io/LandingPersonalPage",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
