@@ -1,5 +1,6 @@
 import React, { useRef, useCallback } from 'react'
 import { Github, Linkedin, Handshake } from "lucide-react"
+import Header from './Header'
 import MyActivity from './Activity'
 import WorkExperience from './WorkExperience'
 import Projects from './Projects'
@@ -52,32 +53,19 @@ export default function LandingPage() {
     window.requestAnimationFrame(step);
   }, []);
 
+  const refs = {
+    activityRef,
+    experienceRef,
+    projectsRef,
+    skillsRef,
+    awardsRef,
+    contactRef
+  };
+
   return (
     <div className="bg-gray-900 text-white font-sans">
       <div className="min-h-screen flex flex-col">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <header className="py-6">
-            <nav className="flex justify-between items-center">
-              <div className="text-2xl font-bold">BR</div>
-              <div className="space-x-7">
-                <button onClick={() => scrollToSection(activityRef)} className="hover:text-gray-300">Activity</button>
-                <button onClick={() => scrollToSection(experienceRef)} className="hover:text-gray-300">Experience</button>
-                <button onClick={() => scrollToSection(projectsRef)} className="hover:text-gray-300">Projects</button>
-                <button onClick={() => scrollToSection(skillsRef)} className="hover:text-gray-300">Skills</button>
-                <button onClick={() => scrollToSection(awardsRef)} className="hover:text-gray-300">Awards</button>
-                <button onClick={() => scrollToSection(contactRef)} className="hover:text-gray-300">Contact</button>
-                <a 
-                    href="/resume.pdf" 
-                    className="bg-white text-gray-900 px-4 py-2 rounded-full hover:bg-gray-200 transition-colors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >
-                    Resume
-                </a>
-              </div>
-            </nav>
-          </header>
-        </div>
+        <Header scrollToSection={scrollToSection} refs={refs} />
 
         <main className="flex-grow flex items-center justify-center">
           <div className="text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
