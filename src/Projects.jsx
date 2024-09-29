@@ -9,7 +9,7 @@ const projects = [
     skills: ["React.js", "Tailwind CSS", "Vite", "Python", "Flask", "Firebase"],
     videoUrl: "https://example.com/edutrade-demo.mp4", // Replace with actual video URL
     githubUrl: "https://github.com/bryanrg22/edutrade", // Replace with actual GitHub URL
-    image: "/edutradeLogo.png", // Replace with actual image path
+    image: "/projectsLogos/edutradeLogo.png", // Replace with actual image path
   },
   {
     name: "StockWise",
@@ -18,7 +18,7 @@ const projects = [
     skills: ["JavaScript", "React", "Tailwind CSS", "DaisyUI", "Framer", "Vite", "Node.js", "Google Gemini", "Python", "Flask", "Firebase", "Anaconda"],
     videoUrl: "https://github.com/user-attachments/assets/28d5a71a-0e7a-4e99-af01-05d11c646aee", // Replace with actual video URL if different
     githubUrl: "https://github.com/benson-fm/stockwise",
-    image: "/stockwiseLogo.png", // Replace with actual image path
+    image: "/projectsLogos/stockwiseLogo.png", // Replace with actual image path
   },
   {
     name: "Wordle",
@@ -27,7 +27,7 @@ const projects = [
     skills: ["Python", "OpenAI API", "Colorama"],
     videoUrl: "https://github.com/user-attachments/assets/61def674-bd5d-4582-a6b7-0f38bf574ae8", // Replace with actual video URL
     githubUrl: "https://github.com/bryanrg22/Wordle",
-    image: "/pythonwordleLogo.png", // Replace with actual image path
+    image: "/projectsLogos/pythonwordleLogo.png", // Replace with actual image path
   }
 ];
 

@@ -3,7 +3,10 @@ import { Github, Linkedin, Handshake } from "lucide-react"
 import MyActivity from './Activity'
 import WorkExperience from './WorkExperience'
 import Projects from './Projects'
+import Contact from './ContactMe'
+import Skills from './Skills'
 import MouseIcon from './MouseIcon';
+import Footer from './Footer';
 import './mouseIcon.css';
 
 const ScrollMouseIcon = () => (
@@ -79,6 +82,18 @@ export default function LandingPage() {
 
       <div id="projects">
         <Projects />
+      </div>
+
+      <div id="skills">
+        <Skills />
+      </div>
+
+      <div id="contact">
+        <Contact />
+      </div>
+
+      <div id="footer">
+        <Footer />
       </div>
 
     </div>

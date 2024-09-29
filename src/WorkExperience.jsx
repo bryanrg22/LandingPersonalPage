@@ -44,7 +44,7 @@ export default function WorkExperience() {
       location: "Los Angeles, CA",
       description: "Responsibilities: Data Collection/Analysis/Visualization, Machine Learning Model Development, Report Writing. Fall Research Fellow in Professor Emilio Ferrara Election Integrity Initiative Research (HUMANS Lab).",
       skills: ["Data Analysis", "Machine Learning", "Visualization", "Report Writing"],
-      logo: "uscisiLogo.jpg"
+      logo: "/experienceLogos/uscisiLogo.jpg"
     },
     {
       title: "Software Engineering Fellowship",
@@ -53,7 +53,7 @@ export default function WorkExperience() {
       location: "Remote",
       description: "Constructing 5 AI projects through HTML & CSS, React, NextJS, Firebase, and API's. Launching a capstone project with the goal of acquiring 1,000+ users.",
       skills: ["HTML", "CSS", "React", "NextJS", "Firebase", "API Integration"],
-      logo: "headstarterLogo.avif"
+      logo: "/experienceLogos/headstarterLogo.avif"
     },
     {
       title: "Undergraduate Summer Researcher",
@@ -62,7 +62,7 @@ export default function WorkExperience() {
       location: "Los Angeles, CA",
       description: "Research how to improve OpenAI's CLIP Model to detect more frequent misinformation through false text-image pairs. Building a dataset to allow the Model to learn patterns in more challenging pairs through the use of PyTorch and LLMs.",
       skills: ["OpenAI", "CLIP Model", "PyTorch", "LLMs", "Dataset Creation"],
-      logo: "uscviterbiLogo.jpg"
+      logo: "/experienceLogos/uscviterbiLogo.jpg"
     },
     {
       title: "Jane Street UNBOXED Scholar",
@@ -71,7 +71,7 @@ export default function WorkExperience() {
       location: "New York, NY",
       description: "Introduction to statistics, probability, programming, and analytical problem-solving at Jane Street New York. Hands-on development experience with Jane Street Engineers in translating the foundations of mathematics to the financial markets, writing code to analyze data, and exploring business case studies.",
       skills: ["Statistics", "Probability", "Programming", "Analytical Problem-Solving", "Financial Markets"],
-      logo: "janestreetLogo.png"
+      logo: "/experienceLogos/janestreetLogo.png"
     },
     {
       title: "Summer Intern",
@@ -80,7 +80,7 @@ export default function WorkExperience() {
       location: "Pasadena, CA",
       description: "Teaching different Coding Languages to people ages 7-18.",
       skills: ["Lua (Roblox)", "Scratch", "Teaching"],
-      logo: "coderschoolLogo.jpeg"
+      logo: "/experienceLogos/coderschoolLogo.jpeg"
     }
   ];
 
