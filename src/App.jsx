@@ -3,8 +3,8 @@ import { Github, Linkedin, Handshake } from "lucide-react"
 import MyActivity from './Activity'
 import WorkExperience from './WorkExperience'
 import Projects from './Projects'
-import Contact from './ContactMe'
 import Skills from './Skills'
+import Contact from './ContactMe'
 import MouseIcon from './MouseIcon';
 import Footer from './Footer';
 import './mouseIcon.css';
@@ -25,11 +25,12 @@ export default function LandingPage() {
           <header className="py-6">
             <nav className="flex justify-between items-center">
               <div className="text-2xl font-bold">BR</div>
-              <div className="space-x-6">
+              <div className="space-x-7">
                 <a href="#activity" className="hover:text-gray-300">Activity</a>
                 <a href="#experience" className="hover:text-gray-300">Experience</a>
                 <a href="#projects" className="hover:text-gray-300">Projects</a>
                 <a href="#" className="hover:text-gray-300">Skills</a>
+                <a href="#" className="hover:text-gray-300">Awards</a>
                 <a href="#" className="hover:text-gray-300">Contact</a>
                 <a 
                     href="/resume.pdf" 

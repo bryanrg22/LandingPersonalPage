@@ -15,6 +15,9 @@ const activities = {
       { name: "Color Stack", description: "Black and Latinx students in Computing", date: "", status: "", location: "", image: "/activityLogos/colorstackLogo.jpeg?height=50&width=50" },
       { name: "SHPE", description: "Society of Hispanic Professional Engineers", date: "", status: "", location: "", image: "/activityLogos/shpeLogo.png?height=50&width=50" },
       { name: "ALPFA", description: "Association of Latino Professionals For America", date: "", status: "", location: "", image: "/activityLogos/alpfaLogo.jpg?height=50&width=50" },
+      { name: "FIRST Alumni", description: "Competed in FIRST Tech Challenge", date: "", status: "", location: "", image: "/activityLogos/firstLogo.jpeg?height=50&width=50" },
+      { name: "NAF Alumni", description: "Academy of Engineering and Academy of Information Science (Computer Science)", date: "", status: "", location: "", image: "/activityLogos/nafLogo.jpeg?height=50&width=50" },
+      { name: "SkillsUSA Alumni", description: "Cpmpeted in Engineering Technology/Design", date: "", status: "", location: "", image: "/activityLogos/skillsusaLogo.png?height=50&width=50" },
     ],
     Conferences: [
       { name: "SHPE National Convention", description: "", date: "OCT 30 - NOV 4", status: "UPCOMING", location: "Anaheim, California", image: "/activityLogos/shpeLogo.png?height=50&width=50" },
