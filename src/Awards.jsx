@@ -8,8 +8,8 @@ const awards = [
     location: "Irvine, CA",
     year: "2024",
     icon: "Trophy",
-    image: "/LandingPersonalPage/awardsLogo/astroMedals.jpg",
-    logo: "/LandingPersonalPage/awardsLogo/astrohacksLogo.jpeg"
+    image: "/awardsLogo/astroMedals.jpg",
+    logo: "/awardsLogo/astrohacksLogo.jpeg"
   },
   {
     title: "SkillsUSA CA Engineering Technology/Design",
@@ -17,8 +17,8 @@ const awards = [
     location: "Ontario, CA",
     year: "2024",
     icon: "Medal",
-    image: "/LandingPersonalPage/awardsLogo/skillsMedals.jpeg",
-    logo: "/LandingPersonalPage/awardsLogo/skillsusaLogo.png"
+    image: "/awardsLogo/skillsMedals.jpeg",
+    logo: "/awardsLogo/skillsusaLogo.png"
   },
   {
     title: "FIRST Tech Challenge CENTERSTAGE Robotics",
@@ -26,8 +26,8 @@ const awards = [
     location: "Pasadena, CA",
     year: "2024",
     icon: "Award",
-    image: "/LandingPersonalPage/awardsLogo/firstMedals.jpeg",
-    logo: "/LandingPersonalPage/awardsLogo/firstLogo.jpeg"
+    image: "/awardsLogo/firstMedals.jpeg",
+    logo: "/awardsLogo/firstLogo.jpeg"
   },
 ];
 
