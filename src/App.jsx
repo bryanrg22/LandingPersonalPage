@@ -1,4 +1,4 @@
-import React, { useRef, useCallback } from 'react'
+import React, { useRef, useCallback, useEffect } from 'react'
 import { Github, Linkedin, Handshake } from "lucide-react"
 import Header from './Header'
 import MyActivity from './Activity'
@@ -10,6 +10,8 @@ import Contact from './ContactMe'
 import MouseIcon from './MouseIcon';
 import Footer from './Footer';
 import './mouseIcon.css';
+import GoogleAnalytics from './GoogleAnalytics';
+import useAnalytics from './useAnalytics';
 
 // Easing function
 const easeInOutQuad = t => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
@@ -23,6 +25,13 @@ const ScrollMouseIcon = ({ scrollToSection, targetRef }) => (
 );
 
 export default function LandingPage() {
+  const { pageView } = useAnalytics();
+
+  useEffect(() => {
+    console.log('LandingPage mounted');
+    pageView('Landing Page', '/');
+  }, [pageView]);
+
   const activityRef = useRef(null);
   const experienceRef = useRef(null);
   const projectsRef = useRef(null);
@@ -63,9 +72,11 @@ export default function LandingPage() {
   };
 
   return (
-    <div className="bg-gray-900 text-white font-sans">
-      <div className="min-h-screen flex flex-col">
-        <Header scrollToSection={scrollToSection} refs={refs} />
+    <>
+      <GoogleAnalytics measurementId="G-GZY94HXVBB" />
+      <div className="bg-gray-900 text-white font-sans">
+        <div className="min-h-screen flex flex-col">
+          <Header scrollToSection={scrollToSection} refs={refs} />
 
           <main className="flex-grow flex items-center justify-center px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-5xl mx-auto">
@@ -131,6 +142,7 @@ export default function LandingPage() {
           <Footer />
         </div>
 
-    </div>
+      </div>
+    </>
   );
 }
