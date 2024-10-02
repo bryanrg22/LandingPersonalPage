@@ -8,11 +8,7 @@ const projects = [
     longDescription: "This project puts forth an innovative approach to dissecting and promoting simple stock options—a fantastic tool for beginners in finance and stocks to learn. Featuring a robust user login system with complete firebase integration, a detailed questionnaire to tailor stock options to users, and finally personalized stock suggestions paired with helpful visual aides, it's never been easier to grow your wealth. Meet your AI financial assistant today!",
     skills: ["React.js", "Tailwind CSS", "Vite", "Python", "Flask", "Firebase"],
     videoUrl: "https://github.com/user-attachments/assets/325452ee-d9b4-4fd8-b55f-f0c6fe43cbc5", // Replace with actual video URL
-<<<<<<< Updated upstream
     githubUrl: "https://github.com/bryanrg22/edutrade", // Replace with actual GitHub URL
-=======
-    githubUrl: "https://github.com/bryanrg22/eduTrade", // Replace with actual GitHub URL
->>>>>>> Stashed changes
     image: "/projectsLogos/edutradeLogo.png", // Replace with actual image path
   },
   {
