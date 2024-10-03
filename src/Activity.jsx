@@ -11,6 +11,10 @@ const activities = {
       { name: "UC Berkeley AI Hackathon", description: "", date: "JUN 22 - JUN 23, 2024", status: "COMPLETED", location: "Berkeley, California", image: "/activityLogos/berkeleyLogo.png?height=50&width=50" },
       { name: "AstroHacks", description: "High Shool Hackathon", date: "APR 13, 2024", status: "COMPLETED", location: "Irvine, California", image: "/activityLogos/astrohacksLogo.jpeg?height=50&width=50" },
     ],
+    Quant_Trading: [
+      { name: "Cornell Trading Competition", description: "", date: "OCT 9, 2024", status: "UPCOMING", location: "Ithaca, New York", image: "/activityLogos/cornellLogo.png?height=50&width=50" },
+      { name: "Point72 Academy Case Competition", description: "", date: "OCT 2 - PRESENT", status: "LIVE", location: "Remote / New York", image: "/activityLogos/point72Logo.png?height=50&width=50" },
+    ],
     Organizations: [
       { name: "CodePath", description: "Technical Interview Course Prep - Fall Cohort", date: "", status: "", location: "", image: "/activityLogos/codepathLogo.jpeg?height=50&width=50" },
       { name: "Color Stack", description: "Black and Latinx students in Computing", date: "", status: "", location: "", image: "/activityLogos/colorstackLogo.jpeg?height=50&width=50" },
