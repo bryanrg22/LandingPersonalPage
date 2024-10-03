@@ -12,17 +12,8 @@ const activities = {
       { name: "AstroHacks", description: "High Shool Hackathon", date: "APR 13, 2024", status: "COMPLETED", location: "Irvine, California", image: "/activityLogos/astrohacksLogo.jpeg?height=50&width=50" },
     ],
     Quant_Trading: [
-      { name: "Cornell Trading Competition", description: "", date: "OCT 9, 2024", status: "UPCOMING", location: "Ithaca, New York", image: "/activityLogos/cornellLogo.png?height=50&width=50" },
-      { name: "Point72 Academy Case Competition", description: "", date: "OCT 2 - PRESENT", status: "LIVE", location: "Remote / New York", image: "/activityLogos/point72Logo.png?height=50&width=50" },
-    ],
-    Organizations: [
-      { name: "CodePath", description: "Technical Interview Course Prep - Fall Cohort", date: "", status: "", location: "", image: "/activityLogos/codepathLogo.jpeg?height=50&width=50" },
-      { name: "Color Stack", description: "Black and Latinx students in Computing", date: "", status: "", location: "", image: "/activityLogos/colorstackLogo.jpeg?height=50&width=50" },
-      { name: "SHPE", description: "Society of Hispanic Professional Engineers", date: "", status: "", location: "", image: "/activityLogos/shpeLogo.png?height=50&width=50" },
-      { name: "ALPFA", description: "Association of Latino Professionals For America", date: "", status: "", location: "", image: "/activityLogos/alpfaLogo.jpg?height=50&width=50" },
-      { name: "FIRST Alumni", description: "Competed in FIRST Tech Challenge", date: "", status: "", location: "", image: "/activityLogos/firstLogo.jpeg?height=50&width=50" },
-      { name: "NAF Alumni", description: "Academy of Engineering and Academy of Information Science (Computer Science)", date: "", status: "", location: "", image: "/activityLogos/nafLogo.jpeg?height=50&width=50" },
-      { name: "SkillsUSA Alumni", description: "Cpmpeted in Engineering Technology/Design", date: "", status: "", location: "", image: "/activityLogos/skillsusaLogo.png?height=50&width=50" },
+      { name: "Cornell Trading Competition", description: "Cornell Quant Fund", date: "OCT 19, 2024", status: "UPCOMING", location: "New York, New York", image: "/activityLogos/cornellLogo.png?height=50&width=50" },
+      { name: "Point72 Academy National Case Competition", description: "", date: "OCT 2 - PRESENT", status: "LIVE", location: "Remote / New York", image: "/activityLogos/point72Logo.png?height=50&width=50" },
     ],
     Conferences: [
       { name: "SHPE National Convention", description: "", date: "OCT 30 - NOV 4", status: "UPCOMING", location: "Anaheim, California", image: "/activityLogos/shpeLogo.png?height=50&width=50" },
@@ -36,13 +27,22 @@ const activities = {
       { name: "NASA Internship Experience", description: "Insights from Interns and Mentors", date: "JUL 26, 2024", status: "COMPLETED", location: "Remote", image: "/activityLogos/nasaLogo.png?height=50&width=50" },
     ],
     USC: [
-      { name: "USC Viterbi Engineering", description: "Career & Internship Fair - Fall 2024", date: "OCT 2, 2024", status: "UPCOMING", location: "USC Campus", image: "/activityLogos/uscLogo.png?height=50&width=50" },
-      { name: "USC LeetCode Jam Night", description: "", date: "SEPT 18, 2024", status: "UPCOMING", location: "USC Campus", image: "/activityLogos/uscLogo.png?height=50&width=50" },
+      { name: "USC Viterbi Engineering", description: "Career & Internship Fair - Fall 2024", date: "OCT 2, 2024", status: "COMPLETED", location: "USC Campus", image: "/activityLogos/uscLogo.png?height=50&width=50" },
+      { name: "USC LeetCode Jam Night", description: "", date: "SEPT 18, 2024", status: "COMPLETED", location: "USC Campus", image: "/activityLogos/uscLogo.png?height=50&width=50" },
       { name: "USC Fall Career Fair 2024", description: "", date: "SEPT 12, 2024", status: "COMPLETED", location: "USC Campus", image: "/activityLogos/uscLogo.png?height=50&width=50" },
       { name: "USC Entrepreneurship Expo", description: "", date: "SEPT 5, 2024", status: "COMPLETED", location: "USC Campus", image: "/activityLogos/uscLogo.png?height=50&width=50" },
       { name: "USC Viterbi Fair", description: "", date: "SEPT 5, 2024", status: "COMPLETED", location: "USC Campus", image: "/activityLogos/uscLogo.png?height=50&width=50" },
       { name: "USC Career Carnival", description: "", date: "SEPT 4, 2024", status: "COMPLETED", location: "USC Campus", image: "/activityLogos/uscLogo.png?height=50&width=50" },
       { name: "USC Involvement Fair", description: "", date: "AUG 29, 2024", status: "COMPLETED", location: "USC Campus", image: "/activityLogos/uscLogo.png?height=50&width=50" },
+    ],
+    Organizations: [
+      { name: "CodePath", description: "Technical Interview Course Prep - Fall Cohort", date: "", status: "", location: "", image: "/activityLogos/codepathLogo.jpeg?height=50&width=50" },
+      { name: "Color Stack", description: "Black and Latinx students in Computing", date: "", status: "", location: "", image: "/activityLogos/colorstackLogo.jpeg?height=50&width=50" },
+      { name: "SHPE", description: "Society of Hispanic Professional Engineers", date: "", status: "", location: "", image: "/activityLogos/shpeLogo.png?height=50&width=50" },
+      { name: "ALPFA", description: "Association of Latino Professionals For America", date: "", status: "", location: "", image: "/activityLogos/alpfaLogo.jpg?height=50&width=50" },
+      { name: "FIRST Alumni", description: "Competed in FIRST Tech Challenge", date: "", status: "", location: "", image: "/activityLogos/firstLogo.jpeg?height=50&width=50" },
+      { name: "NAF Alumni", description: "Academy of Engineering and Academy of Information Science (Computer Science)", date: "", status: "", location: "", image: "/activityLogos/nafLogo.jpeg?height=50&width=50" },
+      { name: "SkillsUSA Alumni", description: "Cpmpeted in Engineering Technology/Design", date: "", status: "", location: "", image: "/activityLogos/skillsusaLogo.png?height=50&width=50" },
     ],
   }
 
