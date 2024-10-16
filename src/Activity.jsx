@@ -13,7 +13,13 @@ const activities = {
     ],
     Quant_Trading: [
       { name: "Cornell Trading Competition", description: "Cornell Quant Fund", date: "OCT 19, 2024", status: "UPCOMING", location: "New York, New York", image: "/activityLogos/cornellLogo.png?height=50&width=50" },
+<<<<<<< Updated upstream
       { name: "Point72 Academy National Case Competition", description: "", date: "OCT 2 - PRESENT", status: "LIVE", location: "Remote / New York", image: "/activityLogos/point72Logo.png?height=50&width=50" },
+=======
+      { name: "Point72 Academy National Case Competition", description: "", date: "OCT 2 - PRESENT", status: "LIVE", location: "Remote / New York, New York", image: "/activityLogos/point72Logo.png?height=50&width=50" },
+      { name: "YHacks Estimathone", description: "Yale's Hackathon", date: "OCT 5, 2024", status: "UPCOMING", location: "New Haven, Connecticut", image: "/activityLogos/yaleLogo.png" },
+      { name: "Jane Street Estimathon", description: "", date: "JUL 24, 2024", status: "COMPLETED", location: "New York, New York", image: "/activityLogos/janestreetLogo.png?height=50&width=50" },
+>>>>>>> Stashed changes
     ],
     Conferences: [
       { name: "SHPE National Convention", description: "", date: "OCT 30 - NOV 4", status: "UPCOMING", location: "Anaheim, California", image: "/activityLogos/shpeLogo.png?height=50&width=50" },
