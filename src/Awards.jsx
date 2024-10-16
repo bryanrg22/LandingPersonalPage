@@ -3,6 +3,15 @@ import { Trophy, Award, Medal, MapPin } from 'lucide-react';
 
 const awards = [
   {
+    title: "HackHarvard's Hackathon",
+    description: "(Winner) Best Use of Terraform",
+    location: "Cambridge, MA",
+    year: "2024",
+    icon: "Trophy",
+    image: "/awardsLogo/hackharvardteam.jpeg",
+    logo: "/awardsLogo/harvardLogo.png"
+  },
+  {
     title: "AstroHacks Hackathon",
     description: "(Winner) Gold Medalist, Best Execution",
     location: "Irvine, CA",

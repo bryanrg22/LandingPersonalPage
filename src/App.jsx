@@ -1,4 +1,4 @@
-import React, { useRef, useCallback, useEffect } from 'react'
+import React, { useRef, useCallback, useEffect, useState } from 'react'
 import { Github, Linkedin, Handshake } from "lucide-react"
 import Header from './Header'
 import MyActivity from './Activity'
@@ -16,13 +16,31 @@ import useAnalytics from './useAnalytics';
 // Easing function
 const easeInOutQuad = t => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
 
-const ScrollMouseIcon = ({ scrollToSection, targetRef }) => (
-  <div className="w-full flex justify-center mb-20">
-    <button onClick={() => scrollToSection(targetRef)} className="bg-transparent border-none cursor-pointer">
-      <MouseIcon />
-    </button>
-  </div>
-);
+const ScrollMouseIcon = ({ scrollToSection, targetRef }) => {
+  const [opacity, setOpacity] = useState(1);
+
+  useEffect(() => {
+    const fadeInterval = setInterval(() => {
+      setOpacity((prevOpacity) => (prevOpacity === 1 ? 0 : 1));
+    }, 2000); // Change opacity every 2 seconds
+
+    return () => clearInterval(fadeInterval);
+  }, []);
+
+  return (
+    <div className="w-full flex flex-col items-center mb-20">
+      <p 
+        className="text-white text-sm mb-2 transition-opacity duration-1000 ease-in-out"
+        style={{ opacity }}
+      >
+        Scroll Down
+      </p>
+      <button onClick={() => scrollToSection(targetRef)} className="bg-transparent border-none cursor-pointer">
+        <MouseIcon />
+      </button>
+    </div>
+  );
+};
 
 export default function LandingPage() {
   const { pageView } = useAnalytics();
@@ -84,6 +102,9 @@ export default function LandingPage() {
                 <span className="inline-block">BRYAN</span>{' '}
                 <span className="inline-block">RAMIREZ-GONZALEZ</span>
               </h1>
+              <p className="text-lg sm:text-xl mb-8 max-w-3xl mx-auto">
+                <span className="text-yellow-400 block sm:inline">2x Hackathon Winner  </span>
+              </p>
               <p className="text-lg sm:text-xl mb-8 max-w-3xl mx-auto">
                 <span className="text-blue-400 block sm:inline">First-Generation Latino Software Developer</span>
                 <span className="hidden sm:inline"> and </span>

@@ -3,6 +3,15 @@ import { ChevronDown, ChevronUp, ExternalLink, Github } from 'lucide-react';
 
 const projects = [
   {
+    "name": "CleanSweep",
+    "description": "Optimizing Waste Collection for Smarter Cities",
+    "longDescription": "CleanSweep provides an innovative solution to waste management by using real-time data to optimize garbage collection routes, minimizing inefficiency and reducing environmental impact. By integrating hardware and software, it offers dynamic routing for garbage truck drivers based on live conditions like trash bin levels and traffic. This project aims to create cleaner cities by improving resource allocation and reducing the strain on landfills through smarter waste management.",
+    "skills": ["React.js", "Tailwind CSS", "Vite", "Python", "Flask", "Firebase"],
+    "videoUrl": "https://github.com/user-attachments/assets/0f2393c9-9ef4-4f08-b809-f02884e8ea5a", // Replace with actual video URL
+    "githubUrl": "https://github.com/DPulavarthy/HackHarvard", // Replace with actual GitHub URL
+    "image": "/projectsLogos/cleansweeplogo.png" // Replace with actual image path
+  },
+  {
     name: "eduTrade",
     description: "Your AI Financial and Stock Investment Advisor",
     longDescription: "This project puts forth an innovative approach to dissecting and promoting simple stock options—a fantastic tool for beginners in finance and stocks to learn. Featuring a robust user login system with complete firebase integration, a detailed questionnaire to tailor stock options to users, and finally personalized stock suggestions paired with helpful visual aides, it's never been easier to grow your wealth. Meet your AI financial assistant today!",
