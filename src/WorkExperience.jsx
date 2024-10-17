@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Calendar, MapPin, ChevronDown, ChevronUp } from 'lucide-react';
 
-const ExperienceItem = ({ title, company, date, location, description, skills, logo }) => (
-  <div className="mb-8 border-l-2 border-gray-700 pl-4">
+const ExperienceItem = React.forwardRef(({ title, company, date, location, description, skills, logo }, ref) => (
+  <div ref={ref} className="mb-8 border-l-2 border-gray-700 pl-4">
     <div className="flex items-center mb-4">
       <img
         src={logo}
@@ -35,10 +35,11 @@ const ExperienceItem = ({ title, company, date, location, description, skills, l
       </div>
     )}
   </div>
-);
+));
 
 export default function WorkExperience() {
   const [showAll, setShowAll] = useState(false);
+  const experienceRefs = useRef([]);
 
   const experiences = [
     {
@@ -121,6 +122,20 @@ export default function WorkExperience() {
     }
   ];
 
+  useEffect(() => {
+    experienceRefs.current = experienceRefs.current.slice(0, experiences.length);
+  }, [experiences]);
+
+  const scrollToExperience = (index) => {
+    const element = experienceRefs.current[index];
+    if (element) {
+      const yOffset = -100; // Adjust this value to fine-tune the scroll position
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+    setShowAll(true);
+  };
+
   const displayedExperiences = showAll ? experiences : experiences.slice(0, 2);
 
   return (
@@ -133,12 +148,17 @@ export default function WorkExperience() {
               key={index}
               src={exp.logo}
               alt={`${exp.company} logo`}
-              className="w-12 h-12 rounded-full object-cover"
+              className="w-12 h-12 rounded-full object-cover cursor-pointer transition-transform hover:scale-110"
+              onClick={() => scrollToExperience(index)}
             />
           ))}
         </div>
         {displayedExperiences.map((exp, index) => (
-          <ExperienceItem key={index} {...exp} />
+          <ExperienceItem 
+            key={index} 
+            {...exp} 
+            ref={el => experienceRefs.current[index] = el}
+          />
         ))}
         {experiences.length > 2 && (
           <div className="text-center mt-12">

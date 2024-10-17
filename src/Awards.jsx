@@ -55,19 +55,20 @@ const IconComponent = ({ iconName }) => {
 
 const AwardItem = ({ award }) => {
   return (
-    <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:bg-gray-700 transition-colors">
+    <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg relative group transition-all duration-300 hover:shadow-2xl hover:scale-105">
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
       <div className="relative h-48 overflow-hidden">
         <img 
           src={award.image} 
           alt={`${award.title} Medal`} 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
         />
       </div>
-      <div className="p-6">
+      <div className="relative z-10 p-6">
         <div className="flex items-center mb-4">
-          <img src={award.logo} alt={award.title} className="w-12 h-12 mr-4 rounded object-cover" />
+          <img src={award.logo} alt={award.title} className="w-12 h-12 mr-4 rounded object-cover transition-transform duration-300 group-hover:scale-110" />
           <div>
-            <h3 className="text-2xl font-semibold text-white">{award.title}</h3>
+            <h3 className="text-2xl font-semibold text-white group-hover:text-blue-300 transition-colors duration-300">{award.title}</h3>
           </div>
         </div>
         <div className="flex items-center mb-2">
@@ -80,6 +81,7 @@ const AwardItem = ({ award }) => {
         </div>
         {award.year && <p className="text-gray-400">{award.year}</p>}
       </div>
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse"></div>
     </div>
   );
 };

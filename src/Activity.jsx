@@ -3,7 +3,6 @@ import { ChevronDown, ChevronUp, MapPin } from 'lucide-react'
 
 const activities = {
   Hackathons: [
-    { name: "Cal Hacks 11.0", description: "", date: "2024-10-18", endDate: "2024-10-20", status: "UPCOMING", location: "The Metreon San Francisco, California", image: "/activityLogos/berkeleyLogo.png?height=50&width=50" },
     { name: "HackHarvard", description: "", date: "2024-10-11", endDate: "2024-10-13", status: "COMPLETED", location: "Cambridge, Massachusetts", image: "/activityLogos/harvardLogo.png?height=50&width=50", highlight: "Hackathon Winner" },
     { name: "YHacks", description: "Yale", date: "2024-10-04", endDate: "2024-10-06", status: "COMPLETED", location: "New Haven, Connecticut", image: "/activityLogos/yaleLogo.png" },
     { name: "HackGT", description: "Georgia Tech", date: "2024-09-27", endDate: "2024-09-29", status: "Flight Canceled Due to Hurricane Helene", location: "Atlanta, Georgia", image: "/activityLogos/georgiatechLogo.png?height=50&width=50" },
@@ -142,7 +141,7 @@ export default function MyActivity() {
         <h2 className="text-4xl font-bold text-center mb-8">My Activity</h2>
         
         <div className="mb-12">
-          <h3 className="text-2xl font-bold mb-6 text-center">Featured Activities</h3>
+          <h3 className="text-2xl font-bold  mb-6 text-center">Featured Activities</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {highlightedActivities.map((activity, index) => (
               <HighlightedActivity key={index} activity={activity} />
@@ -170,12 +169,13 @@ export default function MyActivity() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {displayedActivities?.map((activity, index) => (
-            <div key={index} className="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
-              <div className="p-6">
+            <div key={index} className="bg-gray-800 rounded-lg overflow-hidden shadow-lg relative group transition-all duration-300 hover:shadow-2xl hover:scale-105">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+              <div className="relative z-10 p-6">
                 <div className="flex items-center mb-4">
-                  <img src={activity.image} alt={activity.name} className="w-12 h-12 mr-4 rounded" />
+                  <img src={activity.image} alt={activity.name} className="w-12 h-12 mr-4 rounded transition-transform duration-300 group-hover:scale-110" />
                   <div>
-                    <h3 className="text-xl font-semibold">{activity.name}</h3>
+                    <h3 className="text-xl font-semibold group-hover:text-blue-300 transition-colors duration-300">{activity.name}</h3>
                     {activity.description && (
                       <p className="text-sm text-gray-400">{activity.description}</p>
                     )}
@@ -207,6 +207,7 @@ export default function MyActivity() {
                   </div>
                 )}
               </div>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse"></div>
             </div>
           ))}
         </div>
