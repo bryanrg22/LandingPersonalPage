@@ -168,8 +168,8 @@ export default function MyActivity() {
   const displayedActivities = showAll ? updatedActivities[selectedTopic] : updatedActivities[selectedTopic]?.slice(0, 4)
 
   const highlightedActivities = [
-    updatedActivities.Hackathons?.find(a => a.name === "HackHarvard"), 
     updatedActivities.USC?.[0],  
+    updatedActivities.Hackathons?.find(a => a.name === "HackHarvard"), 
     updatedActivities.Organizations?.[0],
     updatedActivities.Organizations?.[1],
   ].filter(Boolean)
