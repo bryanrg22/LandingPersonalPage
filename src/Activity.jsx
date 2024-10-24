@@ -31,6 +31,7 @@ const activities = {
     { name: "FIRST Alumni", description: "Competed in FIRST Tech Challenge", date: "", endDate: "", status: "", location: "", image: "/activityLogos/firstLogo.jpeg?height=50&width=50" },
     { name: "NAF Alumni", description: "Academy of Engineering and Academy of Information Science (Computer Science)", date: "", endDate: "", status: "", location: "", image: "/activityLogos/nafLogo.jpeg?height=50&width=50" },
     { name: "SkillsUSA Alumni", description: "Cpmpeted in Engineering Technology/Design", date: "", endDate: "", status: "", location: "", image: "/activityLogos/skillsusaLogo.png?height=50&width=50" },
+    { name: "USC Third Space Youth Institute Alumni", description: "Participant of LACOE Summer 2023 Cohert. Learned the ACE-IT Skillset.", date: "", endDate: "", status: "", location: "", image: "/activityLogos/uscThirdSpace.jpg?height=50&width=50" },
   ],
   Conferences: [
     { name: "SHPE National Convention", description: "", date: "2024-10-30", endDate: "2024-11-04", status: "UPCOMING", location: "Anaheim, California", image: "/activityLogos/shpeLogo.png?height=50&width=50", highlight: "Accepted Fellow" },
