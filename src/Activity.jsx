@@ -24,7 +24,7 @@ const activities = {
     { name: "Jane Street Estimathon", description: "", date: "2024-07-24", endDate: "2024-07-24", status: "COMPLETED", location: "New York, New York", image: "/activityLogos/janestreetLogo.png?height=50&width=50" },
   ],
   Organizations: [
-    { name: "Goldman Sachs", description: "Insights Program", date: "2025-01-01", endDate: "", status: "LIVE", location: "", image: "/activityLogos/GoldmanSachsLogo.png?height=50&width=50", highlight: "" },
+    { name: "Goldman Sachs", description: "Possibilities Summit", date: "2025-01-01", endDate: "", status: "LIVE", location: "", image: "/activityLogos/GoldmanSachsLogo.png?height=50&width=50", highlight: "" },
     { name: "Amazon AWS", description: "AI & ML AI Programming with Python Nanodegree - Winter Cohort", date: "", endDate: "", status: "LIVE", location: "", image: "/activityLogos/awsLogo.jpg?height=50&width=50", highlight: "Scholarship Recipient" },
     { name: "CodePath", description: "Technical Interview Course Prep - Fall Cohort", date: "", endDate: "", status: "LIVE", location: "", image: "/activityLogos/codepathLogo.jpeg?height=50&width=50", highlight: "Accepted Fellow" },
     { name: "Color Stack", description: "Black and Latinx students in Computing", date: "", endDate: "", status: "", location: "", image: "/activityLogos/colorstackLogo.jpeg?height=50&width=50" },
