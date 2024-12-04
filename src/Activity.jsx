@@ -18,11 +18,13 @@ const activities = {
     { name: "AstroHacks", description: "High School Hackathon", date: "2024-04-13", endDate: "2024-04-13", status: "COMPLETED", location: "Irvine, California", image: "/activityLogos/astrohacksLogo.jpeg?height=50&width=50" },
   ],
   Quant_Trading: [
+    { name: "Jane Street \"Odd Events\"", description: "", date: "2024-11-13", endDate: "2024-11-13", status: "COMPLETED", location: "UCLA, California", image: "/activityLogos/janestreetLogo.png?height=50&width=50" },
     { name: "Point72 Academy National Case Competition", description: "", date: "2024-10-02", endDate: "2024-10-14", status: "COMPLETED", location: "Remote / New York", image: "/activityLogos/point72Logo.png?height=50&width=50" },
     { name: "YHacks Estimathone", description: "Yale's Hackathon", date: "2024-10-05", endDate: "2024-10-05", status: "COMPLETED", location: "New Haven, Connecticut", image: "/activityLogos/yaleLogo.png" },
     { name: "Jane Street Estimathon", description: "", date: "2024-07-24", endDate: "2024-07-24", status: "COMPLETED", location: "New York, New York", image: "/activityLogos/janestreetLogo.png?height=50&width=50" },
   ],
   Organizations: [
+    { name: "Goldman Sachs", description: "Insights Program", date: "2025-01-01", endDate: "", status: "LIVE", location: "", image: "/activityLogos/GoldmanSachsLogo.png?height=50&width=50", highlight: "" },
     { name: "Amazon AWS", description: "AI & ML AI Programming with Python Nanodegree - Winter Cohort", date: "", endDate: "", status: "LIVE", location: "", image: "/activityLogos/awsLogo.jpg?height=50&width=50", highlight: "Scholarship Recipient" },
     { name: "CodePath", description: "Technical Interview Course Prep - Fall Cohort", date: "", endDate: "", status: "LIVE", location: "", image: "/activityLogos/codepathLogo.jpeg?height=50&width=50", highlight: "Accepted Fellow" },
     { name: "Color Stack", description: "Black and Latinx students in Computing", date: "", endDate: "", status: "", location: "", image: "/activityLogos/colorstackLogo.jpeg?height=50&width=50" },
