@@ -9,8 +9,11 @@ const goldShine = keyframes`
 
 const activities = {
   Hackathons: [
-    { name: "HackPrinceton", description: "", date: "2024-11-09", endDate: "2024-11-11", status: "UPCOMING", location: "Princeton, New Jersey", image: "/activityLogos/princetonLogo.png?height=50&width=50" },
-    { name: "HackHarvard", description: "", date: "2024-10-11", endDate: "2024-10-13", status: "COMPLETED", location: "Cambridge, Massachusetts", image: "/activityLogos/harvardLogo.png?height=50&width=50", highlight: "Hackathon Winner" },
+    { name: "TreeHacks", description: "Stanford University", date: "2025-02-15", endDate: "2025-02-17", status: "UPCOMING", location: "Stanford, California", image: "/activityLogos/stanfordLogo.png?height=50&width=50" },
+    { name: "Hack@Brown", description: "Brown University", date: "2025-02-02", endDate: "2025-02-03", status: "UPCOMING", location: "Providence, Rhode Island", image: "/activityLogos/brownLogo.png?height=50&width=50" },
+    { name: "SBHacks", description: "UCSB - University of California, Santa Barbara", date: "2025-01-12", endDate: "2025-01-13", status: "UPCOMING", location: "Santa Barbara, California", image: "/activityLogos/ucsbLogo.png?height=50&width=50" },
+    { name: "HackPrinceton", description: "Princeton", date: "2024-11-09", endDate: "2024-11-11", status: "UPCOMING", location: "Princeton, New Jersey", image: "/activityLogos/princetonLogo.png?height=50&width=50" },
+    { name: "HackHarvard", description: "Harvard", date: "2024-10-11", endDate: "2024-10-13", status: "COMPLETED", location: "Cambridge, Massachusetts", image: "/activityLogos/harvardLogo.png?height=50&width=50", highlight: "Hackathon Winner" },
     { name: "YHacks", description: "Yale", date: "2024-10-04", endDate: "2024-10-06", status: "COMPLETED", location: "New Haven, Connecticut", image: "/activityLogos/yaleLogo.png" },
     { name: "HackGT", description: "Georgia Tech", date: "2024-09-27", endDate: "2024-09-29", status: "Flight Canceled Due to Hurricane Helene", location: "Atlanta, Georgia", image: "/activityLogos/georgiatechLogo.png?height=50&width=50" },
     { name: "PennApps XXV", description: "UPenn", date: "2024-09-20", endDate: "2024-09-22", status: "COMPLETED", location: "Philadelphia, Pennsylvania", image: "/activityLogos/upennLogo.png?height=50&width=50" },
