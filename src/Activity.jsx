@@ -10,8 +10,8 @@ const goldShine = keyframes`
 const activities = {
   Hackathons: [
     { name: "TreeHacks", description: "Stanford University", date: "2025-02-15", endDate: "2025-02-17", status: "UPCOMING", location: "Stanford, California", image: "/activityLogos/stanfordLogo.png?height=50&width=50" },
-    { name: "Hack@Brown", description: "Brown University", date: "2025-02-02", endDate: "2025-02-03", status: "UPCOMING", location: "Providence, Rhode Island", image: "/activityLogos/brownLogo.png?height=50&width=50" },
-    { name: "SBHacks", description: "UCSB - University of California, Santa Barbara", date: "2025-01-12", endDate: "2025-01-13", status: "UPCOMING", location: "Santa Barbara, California", image: "/activityLogos/ucsbLogo.png?height=50&width=50" },
+    { name: "HackNYU", description: "New York University", date: "2025-02-09", endDate: "2025-02-03", status: "UPCOMING", location: "New York, New York", image: "/activityLogos/nyuLogo.png?height=50&width=50" },
+    { name: "MIT iQuHACK", description: "MIT - Massachusetts Institute of Technology", date: "2025-01-31", endDate: "2025-02-02", status: "UPCOMING", location: "Boston, Massachusetts", image: "/activityLogos/mitLogo.png?height=50&width=50" },
     { name: "HackPrinceton", description: "Princeton", date: "2024-11-09", endDate: "2024-11-11", status: "UPCOMING", location: "Princeton, New Jersey", image: "/activityLogos/princetonLogo.png?height=50&width=50" },
     { name: "HackHarvard", description: "Harvard", date: "2024-10-11", endDate: "2024-10-13", status: "COMPLETED", location: "Cambridge, Massachusetts", image: "/activityLogos/harvardLogo.png?height=50&width=50", highlight: "Hackathon Winner" },
     { name: "YHacks", description: "Yale", date: "2024-10-04", endDate: "2024-10-06", status: "COMPLETED", location: "New Haven, Connecticut", image: "/activityLogos/yaleLogo.png" },
@@ -21,12 +21,14 @@ const activities = {
     { name: "AstroHacks", description: "High School Hackathon", date: "2024-04-13", endDate: "2024-04-13", status: "COMPLETED", location: "Irvine, California", image: "/activityLogos/astrohacksLogo.jpeg?height=50&width=50" },
   ],
   Quant_Trading: [
+    { name: "Two Sigma 2025 New Seekers Summit", description: "", date: "2025-03-01", endDate: "2025-03-01", status: "COMPLETED", location: "Remote", image: "/activityLogos/twosigmaLogo.png?height=50&width=50" },
     { name: "Jane Street \"Odd Events\"", description: "", date: "2024-11-13", endDate: "2024-11-13", status: "COMPLETED", location: "UCLA, California", image: "/activityLogos/janestreetLogo.png?height=50&width=50" },
     { name: "Point72 Academy National Case Competition", description: "", date: "2024-10-02", endDate: "2024-10-14", status: "COMPLETED", location: "Remote / New York", image: "/activityLogos/point72Logo.png?height=50&width=50" },
     { name: "YHacks Estimathone", description: "Yale's Hackathon", date: "2024-10-05", endDate: "2024-10-05", status: "COMPLETED", location: "New Haven, Connecticut", image: "/activityLogos/yaleLogo.png" },
     { name: "Jane Street Estimathon", description: "", date: "2024-07-24", endDate: "2024-07-24", status: "COMPLETED", location: "New York, New York", image: "/activityLogos/janestreetLogo.png?height=50&width=50" },
   ],
   Organizations: [
+    { name: "NASA L'SPACE", description: "Proposal Writing and Evaluation Experience", date: "2025-01-23", endDate: "2025-05-22", status: "LIVE", location: "", image: "/activityLogos/nasalspaceLogo.jpeg?height=50&width=50", highlight: "" },
     { name: "Goldman Sachs", description: "Possibilities Summit", date: "2025-01-01", endDate: "", status: "LIVE", location: "", image: "/activityLogos/GoldmanSachsLogo.png?height=50&width=50", highlight: "" },
     { name: "Amazon AWS", description: "AI & ML AI Programming with Python Nanodegree - Winter Cohort", date: "", endDate: "", status: "LIVE", location: "", image: "/activityLogos/awsLogo.jpg?height=50&width=50", highlight: "Scholarship Recipient" },
     { name: "CodePath", description: "Technical Interview Course Prep - Fall Cohort", date: "", endDate: "", status: "LIVE", location: "", image: "/activityLogos/codepathLogo.jpeg?height=50&width=50", highlight: "Accepted Fellow" },
