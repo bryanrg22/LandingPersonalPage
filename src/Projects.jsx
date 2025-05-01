@@ -7,7 +7,7 @@ const projects = [
     "description": "Agentic AI co-pilot for industrial procurement optimization",
     "longDescription": "Swerve (Voltway Procurement Management System) is an AI-driven procurement solution built with LangChain that ingests ERP data, CAD specs, and user uploads to forecast inventory needs, automate purchase-order drafting, and send Slack notifications. Using GPT-3.5-Turbo for tool orchestration and o4-mini for multi-step reasoning, Swerve delivers real-time risk analysis, actionable recommendations, and interactive dashboards—empowering non-technical users to manage complex supply chains effortlessly.",
     "skills": [ "React.js", "Tailwind CSS", "Recharts", "MapLibre GL", "Python", "Flask", "Firebase", "LangChain", "OpenAI API", "Slack API"],
-    "videoUrl": "https://youtu.be/wa4kqvqhoZc?si=mxHjqB6rvO2VsOba",
+    "videoUrl": "https://youtu.be/wa4kqvqhoZc?si=w-N7vzHPKkr93CY_",
     "githubUrl": "https://github.com/bryanrg22/CalTech-Hacks",
     "image": "/projectsLogos/swerveLogo.png"
   },
