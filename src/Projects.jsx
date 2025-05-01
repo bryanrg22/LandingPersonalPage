@@ -3,6 +3,15 @@ import { ChevronDown, ChevronUp, ExternalLink, Github } from 'lucide-react';
 
 const projects = [
   {
+    "name": "Swerve",
+    "description": "Agentic AI co-pilot for industrial procurement optimization",
+    "longDescription": "Swerve (Voltway Procurement Management System) is an AI-driven procurement solution built with LangChain that ingests ERP data, CAD specs, and user uploads to forecast inventory needs, automate purchase-order drafting, and send Slack notifications. Using GPT-3.5-Turbo for tool orchestration and o4-mini for multi-step reasoning, Swerve delivers real-time risk analysis, actionable recommendations, and interactive dashboards—empowering non-technical users to manage complex supply chains effortlessly.",
+    "skills": [ "React.js", "Tailwind CSS", "Recharts", "MapLibre GL", "Python", "Flask", "Firebase", "LangChain", "OpenAI API", "Slack API"],
+    "videoUrl": "https://youtu.be/wa4kqvqhoZc?si=mxHjqB6rvO2VsOba",
+    "githubUrl": "https://github.com/bryanrg22/CalTech-Hacks",
+    "image": "/projectsLogos/swerveLogo.png"
+  },
+  {
     "name": "CleanSweep",
     "description": "Optimizing Waste Collection for Smarter Cities",
     "longDescription": "CleanSweep provides an innovative solution to waste management by using real-time data to optimize garbage collection routes, minimizing inefficiency and reducing environmental impact. By integrating hardware and software, it offers dynamic routing for garbage truck drivers based on live conditions like trash bin levels and traffic. This project aims to create cleaner cities by improving resource allocation and reducing the strain on landfills through smarter waste management.",
@@ -20,24 +29,6 @@ const projects = [
     githubUrl: "https://github.com/bryanrg22/edutrade",
     image: "/projectsLogos/edutradeLogo.png",
   },
-  {
-    name: "StockWise",
-    description: "Stock sentiment analysis powered by Google Gemini",
-    longDescription: "StockWise is an AI-powered tool designed to help investors make smarter decisions by analyzing the 50 most relevant news articles, reports, and social media posts related to a specific stock. It offers features like Stock Sentiment Percentile Distribution, Action Recommendations, and Stock Analysis to provide investors with comprehensive insights.",
-    skills: ["JavaScript", "React", "Tailwind CSS", "DaisyUI", "Framer", "Vite", "Node.js", "Google Gemini", "Python", "Flask", "Firebase", "Anaconda"],
-    videoUrl: "https://github.com/user-attachments/assets/28d5a71a-0e7a-4e99-af01-05d11c646aee",
-    githubUrl: "https://github.com/benson-fm/stockwise",
-    image: "/projectsLogos/stockwiseLogo.png",
-  },
-  {
-    name: "Wordle",
-    description: "Python-based implementation of the popular word-guessing game",
-    longDescription: "Wordle is a Python-based implementation of the popular word-guessing game. It features multiple difficulty modes, dynamic word generation using the OpenAI GPT-3.5 API, stylized output with colorama, and a hint system. Players guess a randomly generated word, with feedback provided after each guess.",
-    skills: ["Python", "OpenAI API", "Colorama"],
-    videoUrl: "https://github.com/user-attachments/assets/61def674-bd5d-4582-a6b7-0f38bf574ae8",
-    githubUrl: "https://github.com/bryanrg22/Wordle",
-    image: "/projectsLogos/pythonwordleLogo.png",
-  }
 ];
 
 const ProjectCard = ({ project }) => {

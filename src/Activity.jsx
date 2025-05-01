@@ -9,18 +9,19 @@ const goldShine = keyframes`
 
 const activities = {
   Hackathons: [
-    { name: "TreeHacks", description: "Stanford University", date: "2025-02-15", endDate: "2025-02-17", status: "UPCOMING", location: "Stanford, California", image: "/activityLogos/stanfordLogo.png?height=50&width=50" },
-    { name: "HackNYU", description: "New York University", date: "2025-02-09", endDate: "2025-02-03", status: "UPCOMING", location: "New York, New York", image: "/activityLogos/nyuLogo.png?height=50&width=50" },
-    { name: "MIT iQuHACK", description: "MIT - Massachusetts Institute of Technology", date: "2025-01-31", endDate: "2025-02-02", status: "UPCOMING", location: "Boston, Massachusetts", image: "/activityLogos/mitLogo.png?height=50&width=50" },
-    { name: "HackPrinceton", description: "Princeton", date: "2024-11-09", endDate: "2024-11-11", status: "UPCOMING", location: "Princeton, New Jersey", image: "/activityLogos/princetonLogo.png?height=50&width=50" },
+    { name: "HackTech", description: "California Institute of Technology", date: "2025-04-26", endDate: "2025-04-28", status: "COMPLETED", location: "Pasadena, California", image: "/activityLogos/caltechLogo.png?height=50&width=50", highlight: "Hackathon Winner" },
+    { name: "TreeHacks", description: "Stanford University", date: "2025-02-15", endDate: "2025-02-17", status: "COMPLETED", location: "Stanford, California", image: "/activityLogos/stanfordLogo.png?height=50&width=50" },
+    { name: "MIT iQuHACK", description: "MIT - Massachusetts Institute of Technology", date: "2025-01-31", endDate: "2025-02-02", status: "COMPLETED", location: "Boston, Massachusetts", image: "/activityLogos/mitLogo.png?height=50&width=50" },
+    { name: "HackPrinceton", description: "Princeton", date: "2024-11-09", endDate: "2024-11-11", status: "COMPLETED", location: "Princeton, New Jersey", image: "/activityLogos/princetonLogo.png?height=50&width=50" },
     { name: "HackHarvard", description: "Harvard", date: "2024-10-11", endDate: "2024-10-13", status: "COMPLETED", location: "Cambridge, Massachusetts", image: "/activityLogos/harvardLogo.png?height=50&width=50", highlight: "Hackathon Winner" },
     { name: "YHacks", description: "Yale", date: "2024-10-04", endDate: "2024-10-06", status: "COMPLETED", location: "New Haven, Connecticut", image: "/activityLogos/yaleLogo.png" },
     { name: "HackGT", description: "Georgia Tech", date: "2024-09-27", endDate: "2024-09-29", status: "Flight Canceled Due to Hurricane Helene", location: "Atlanta, Georgia", image: "/activityLogos/georgiatechLogo.png?height=50&width=50" },
     { name: "PennApps XXV", description: "UPenn", date: "2024-09-20", endDate: "2024-09-22", status: "COMPLETED", location: "Philadelphia, Pennsylvania", image: "/activityLogos/upennLogo.png?height=50&width=50" },
     { name: "UC Berkeley AI Hackathon", description: "", date: "2024-06-22", endDate: "2024-06-23", status: "COMPLETED", location: "Berkeley, California", image: "/activityLogos/berkeleyLogo.png?height=50&width=50" },
-    { name: "AstroHacks", description: "High School Hackathon", date: "2024-04-13", endDate: "2024-04-13", status: "COMPLETED", location: "Irvine, California", image: "/activityLogos/astrohacksLogo.jpeg?height=50&width=50" },
+    { name: "AstroHacks", description: "High School Hackathon", date: "2024-04-13", endDate: "2024-04-13", status: "COMPLETED", location: "Irvine, California", image: "/activityLogos/astrohacksLogo.jpeg?height=50&width=50", highlight: "Hackathon Winner" },
   ],
   Quant_Trading: [
+    { name: "Incoming Jane Street FOCUS Undergraduate", description: "", date: "2025-05-21", endDate: "2025-05-24", status: "UPCOMING", location: "New York", image: "/activityLogos/janestreetLogo.png?height=50&width=50" },
     { name: "Two Sigma 2025 New Seekers Summit", description: "", date: "2025-03-01", endDate: "2025-03-01", status: "COMPLETED", location: "Remote", image: "/activityLogos/twosigmaLogo.png?height=50&width=50" },
     { name: "Jane Street \"Odd Events\"", description: "", date: "2024-11-13", endDate: "2024-11-13", status: "COMPLETED", location: "UCLA, California", image: "/activityLogos/janestreetLogo.png?height=50&width=50" },
     { name: "Point72 Academy National Case Competition", description: "", date: "2024-10-02", endDate: "2024-10-14", status: "COMPLETED", location: "Remote / New York", image: "/activityLogos/point72Logo.png?height=50&width=50" },
@@ -81,13 +82,13 @@ const updateActivityStatus = (activity) => {
 
 const HighlightedActivity = ({ activity }) => (
   <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg p-6 relative group transition-all duration-300 hover:shadow-2xl hover:scale-105">
-    {activity.name === "HackHarvard" ? (
+    {activity.name === "HackHarvard" || activity.name === "HackTech" ? (
       <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-yellow-600 opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
     ) : (
       <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
     )}
     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-25 animate-shine"></div>
-    {activity.name === "HackHarvard" && (
+    {activity.name === "HackHarvard" || activity.name === "HackTech" && (
       <div 
         className="absolute inset-0 bg-gradient-to-r from-transparent via-yellow-300 to-transparent opacity-25"
         style={{
@@ -177,10 +178,10 @@ export default function MyActivity() {
   const displayedActivities = showAll ? updatedActivities[selectedTopic] : updatedActivities[selectedTopic]?.slice(0, 4)
 
   const highlightedActivities = [
+    updatedActivities.Hackathons?.find(a => a.name === "HackTech"), 
     updatedActivities.Hackathons?.find(a => a.name === "HackHarvard"), 
+    updatedActivities.Quant_Trading?.[0],  
     updatedActivities.USC?.[0],  
-    updatedActivities.Organizations?.[0],
-    updatedActivities.Organizations?.[1],
   ].filter(Boolean)
 
   return (
