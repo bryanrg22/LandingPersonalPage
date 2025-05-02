@@ -3,11 +3,20 @@ import { ChevronDown, ChevronUp, ExternalLink, Github } from 'lucide-react';
 
 const projects = [
   {
+    "name": "PrizePicks Prediction Website",
+    "description": "AI-driven NBA player Over/Under performance prediction model for PrizePicks",
+    "longDescription": "The PrizePicks Prediction Website is a full-stack application featuring a Flask backend that defines REST endpoints under `/api` to drive player performance predictions. It uses the Firebase Admin SDK to read and write Firestore data—fetching season averages, last-5 game stats, and game status—while ingesting OCR-parsed screenshots. Poisson and Monte Carlo modules compute probability forecasts, and Firebase Cloud Functions handle archival of old threshold documents to ensure real-time accuracy. The React+Vite frontend, styled with Tailwind CSS and powered by Recharts and Lucide React, provides personalized dashboards and interactive analytics. This system delivered a 29,900% ROI—growing an initial $10 to $3,000 with an 11/14 lineup win rate.",
+    "skills": ["React.js", "Vite", "Tailwind CSS", "Python", "Flask", "Firebase Firestore Database", "Firebase Cloud Functions", "OpenAI API (o4-mini)", "Poisson & Monte Carlo", "Pandas", "NumPy", "OCR", "Web Scraping"],
+    "videoUrl": "https://github.com/user-attachments/assets/ec796b28-824e-4374-8d9a-beedc7a0ed4e",
+    "githubUrl": "https://github.com/bryanrg22/prizePicks_predictionWebsite",
+    "image": "/projectsLogos/prizePicksLogo.avif"
+  },
+  {
     "name": "Swerve",
     "description": "Agentic AI co-pilot for industrial procurement optimization",
     "longDescription": "Swerve (Voltway Procurement Management System) is an AI-driven procurement solution built with LangChain that ingests ERP data, CAD specs, and user uploads to forecast inventory needs, automate purchase-order drafting, and send Slack notifications. Using GPT-3.5-Turbo for tool orchestration and o4-mini for multi-step reasoning, Swerve delivers real-time risk analysis, actionable recommendations, and interactive dashboards—empowering non-technical users to manage complex supply chains effortlessly.",
     "skills": [ "React.js", "Tailwind CSS", "Recharts", "MapLibre GL", "Python", "Flask", "Firebase", "LangChain", "OpenAI API", "Slack API"],
-    "videoUrl": "https://youtu.be/wa4kqvqhoZc?si=w-N7vzHPKkr93CY_",
+    "videoUrl": "https://github.com/user-attachments/assets/9b1764ae-8a59-47af-8773-70a00b5dfb1d",
     "githubUrl": "https://github.com/bryanrg22/CalTech-Hacks",
     "image": "/projectsLogos/swerveLogo.png"
   },
@@ -19,15 +28,6 @@ const projects = [
     "videoUrl": "https://github.com/user-attachments/assets/0f2393c9-9ef4-4f08-b809-f02884e8ea5a",
     "githubUrl": "https://github.com/DPulavarthy/HackHarvard",
     "image": "/projectsLogos/cleansweeplogo.png"
-  },
-  {
-    name: "eduTrade",
-    description: "Your AI Financial and Stock Investment Advisor",
-    longDescription: "This project puts forth an innovative approach to dissecting and promoting simple stock options—a fantastic tool for beginners in finance and stocks to learn. Featuring a robust user login system with complete firebase integration, a detailed questionnaire to tailor stock options to users, and finally personalized stock suggestions paired with helpful visual aides, it's never been easier to grow your wealth. Meet your AI financial assistant today!",
-    skills: ["React.js", "Tailwind CSS", "Vite", "Python", "Flask", "Firebase"],
-    videoUrl: "https://github.com/user-attachments/assets/325452ee-d9b4-4fd8-b55f-f0c6fe43cbc5",
-    githubUrl: "https://github.com/bryanrg22/edutrade",
-    image: "/projectsLogos/edutradeLogo.png",
   },
 ];
 
