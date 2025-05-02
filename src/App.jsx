@@ -103,7 +103,7 @@ export default function LandingPage() {
                 <span className="inline-block">RAMIREZ-GONZALEZ</span>
               </h1>
               <p className="text-lg sm:text-xl mb-8 max-w-3xl mx-auto">
-                <span className="text-yellow-400 block sm:inline">2x Hackathon Winner  </span>
+                <span className="text-yellow-400 block sm:inline">3x Hackathon Winner  </span>
               </p>
               <p className="text-lg sm:text-xl mb-8 max-w-3xl mx-auto">
                 <span className="text-blue-400 block sm:inline">First-Generation Latino Software Developer</span>
