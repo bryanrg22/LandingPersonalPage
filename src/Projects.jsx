@@ -3,13 +3,33 @@ import { ChevronDown, ChevronUp, ExternalLink, Github } from 'lucide-react';
 
 const projects = [
   {
-    "name": "PrizePicks Prediction Website",
-    "description": "AI-driven NBA player Over/Under performance prediction model for PrizePicks",
-    "longDescription": "The PrizePicks Prediction Website is a full-stack application featuring a Flask backend that defines REST endpoints under `/api` to drive player performance predictions. It uses the Firebase Admin SDK to read and write Firestore data—fetching season averages, last-5 game stats, and game status—while ingesting OCR-parsed screenshots. Poisson and Monte Carlo modules compute probability forecasts, and Firebase Cloud Functions handle archival of old threshold documents to ensure real-time accuracy. The React+Vite frontend, styled with Tailwind CSS and powered by Recharts and Lucide React, provides personalized dashboards and interactive analytics. This system delivered a 29,900% ROI—growing an initial $10 to $3,000 with an 11/14 lineup win rate.",
-    "skills": ["React.js", "Vite", "Tailwind CSS", "Python", "Flask", "Firebase Firestore Database", "Firebase Cloud Functions", "OpenAI API (o4-mini)", "Poisson & Monte Carlo", "Pandas", "NumPy", "OCR", "Web Scraping"],
+    "name": "Lambda Rim",
+    "description": "AI‑powered NBA fantasy betting hub that parses PrizePicks screenshots and answers “Is the over worth my money?” with transparent probabilistic models and live analytics.",
+    "longDescription": "Last updated July 24, 2025\n - Lambda Rim analyzes your PrizePicks screenshot and delivers one clear answer: “Is the ‘over’ worth my money?” Our end‑to‑end pipeline—OCR → feature engineering → Poisson, Monte Carlo & GARCH probability models → ChatGPT‑powered rationale—runs in your browser.  \n  \nKey features:\n- Screenshot parsing (OCR) to extract player & threshold pairs  \n- Poisson probability, Monte Carlo simulation & GARCH volatility forecasts  \n- Real‑time NBA injury report scraping & automatic playoff‑mode stats  \n- Background Cloud Functions for auto‑settling bets and status updates  \n- React + Vite front end, Flask + Docker API on Google Cloud Run  \n- Firebase Firestore database, Cloud Functions & GitHub Actions CI/CD  \n- Privacy‑first authentication via Google/Microsoft/Firebase Auth",
+    "website_url": "https://lambdarim.com",
+    "skills": [
+      "React.js",
+      "Vite",
+      "Tailwind CSS",
+      "Python",
+      "Flask",
+      "Docker",
+      "Google Cloud Run",
+      "Firebase Firestore",
+      "Firebase Cloud Functions",
+      "GitHub Actions",
+      "OpenAI API (o4‑mini)",
+      "Poisson Distribution",
+      "Monte Carlo Simulation",
+      "GARCH Volatility Model",
+      "Pandas",
+      "NumPy",
+      "OCR",
+      "Web Scraping"
+    ],
     "videoUrl": "https://github.com/user-attachments/assets/ec796b28-824e-4374-8d9a-beedc7a0ed4e",
-    "githubUrl": "https://github.com/bryanrg22/prizePicks_predictionWebsite",
-    "image": "/projectsLogos/prizePicksLogo.avif"
+    "githubUrl": "https://github.com/bryanrg22/lambda-rim",
+    "image": "/projectsLogos/lambdarimLogo.png"
   },
   {
     "name": "Swerve",
