@@ -1,7 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Calendar, MapPin, ChevronDown, ChevronUp } from 'lucide-react';
 
-const ExperienceItem = React.forwardRef(({ title, company, date, location, description, skills, logo }, ref) => (
+const ExperienceItem = React.forwardRef(
+  ({ title, company, date, location, description, skills, logo, researchLink, researchText }, ref) => (
   <div ref={ref} className="mb-8 border-l-2 border-gray-700 pl-4">
     <div className="flex items-center mb-4">
       <img
@@ -34,6 +35,18 @@ const ExperienceItem = React.forwardRef(({ title, company, date, location, descr
         ))}
       </div>
     )}
+    {researchLink && (
+      <div className="mt-4">
+        <a
+          href={researchLink}
+          className="bg-white text-gray-900 px-4 py-2 rounded-full hover:bg-gray-200 transition-colors"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {researchText || "See Research Paper Here"}
+        </a>
+      </div>
+    )}
   </div>
 ));
 
@@ -54,7 +67,10 @@ export default function WorkExperience() {
         "Utilized Seaborn and Matplotlib for correlation analysis and data visualization of over 50 engagement metrics (likes, shares, comments), identifying key trends in hashtag usage (e.g., #EDAwareness) and revealing the top most impactful posts through hashtag analysis."
       ],
       skills: ["Data Analysis", "Machine Learning", "NLP", "Python", "Sentiment Analysis", "Data Visualization"],
-      logo: "/experienceLogos/uscisiLogo.jpg"
+      logo: "/experienceLogos/uscisiLogo.jpg",
+      logos: "/experienceLogos/uscisiLogo.jpg",
+      researchLink: "/research.pdf",
+      researchText: "See Research Paper Here"
     },
     {
       title: "Summer Undergraduate Research Intern",
