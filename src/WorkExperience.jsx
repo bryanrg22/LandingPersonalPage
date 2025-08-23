@@ -56,6 +56,28 @@ export default function WorkExperience() {
 
   const experiences = [
     {
+      title: "Undergraduate Fellow",
+      company: "D. E. Shaw",
+      date: "September 2025",
+      location: "New York, NY",
+      description: [
+        "Chosen for a funded 3‑day program at D. E. Shaw’s NYC office via Connect Fellowship",
+      ],
+      skills: ["SQLite", "Data Querying", "Quantitative Analysis", "Trading"],
+      logo: "/experienceLogos/deshaw.avif"
+    },
+    {
+      title: "Undergraduate Fellow",
+      company: "Jane Street Capital",
+      date: "July 2025",
+      location: "New York, NY",
+      description: [
+        "Chosen as 1 of 14 students for a funded 5‑day program at Jane Street’s NYC office via FOCUS Fellowship"
+      ],
+      skills: ["SQLite", "Data Querying", "Quantitative Analysis", "Trading"],
+      logo: "/experienceLogos/janestreetLogo.png"
+    },
+    {
       title: "Undergraduate Research Intern",
       company: "HUMANS LAB, USC Information Sciences Institute",
       date: "August 2024 - Present",
@@ -91,9 +113,8 @@ export default function WorkExperience() {
       date: "July 2024",
       location: "New York, NY",
       description: [
-        "Improved query performance by implementing data querying systems using SQLite, optimizing rapid access to large datasets.",
-        "Selected as 1 of 37 students for a fully funded 5-day program at Jane Street's NYC office through Unboxed Fellowship.",
-        "Participated in trading activities and led a team in the Estimathon, solving quantitative challenges under competitive conditions."
+        "Chosen as 1 of 37 students for a funded 5-day program at Jane Street’s NYC office through Unboxed Fellowship",
+        "Participated in trading activities and led a team in the Estimathon, solving quantitative challenges under competitive conditions"
       ],
       skills: ["SQLite", "Data Querying", "Quantitative Analysis", "Trading"],
       logo: "/experienceLogos/janestreetLogo.png"

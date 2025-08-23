@@ -123,7 +123,7 @@ export default function LandingPage() {
                   <span className="sm:hidden">GitHub</span>
                   <span className="hidden sm:inline">GitHub</span>
                 </a>
-                <a href="https://usc.joinhandshake.com/profiles/59199219" className="flex items-center justify-center border border-white p-2 hover:bg-white hover:text-gray-900 transition-colors" target="_blank" rel="noopener noreferrer">
+                <a href="https://usc.joinhandshake.com/profiles/bryanrg22" className="flex items-center justify-center border border-white p-2 hover:bg-white hover:text-gray-900 transition-colors" target="_blank" rel="noopener noreferrer">
                   <Handshake className="mr-2" size={20} />
                   <span className="sm:hidden">Handshake</span>
                   <span className="hidden sm:inline">Handshake</span>

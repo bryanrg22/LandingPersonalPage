@@ -21,11 +21,13 @@ const activities = {
     { name: "AstroHacks", description: "High School Hackathon", date: "2024-04-13", endDate: "2024-04-13", status: "COMPLETED", location: "Irvine, California", image: "/activityLogos/astrohacksLogo.jpeg?height=50&width=50", highlight: "Hackathon Winner" },
   ],
   Quant_Trading: [
-    { name: "Incoming Jane Street FOCUS Undergraduate", description: "", date: "2025-05-21", endDate: "2025-05-24", status: "UPCOMING", location: "New York", image: "/activityLogos/janestreetLogo.png?height=50&width=50" },
+    { name: "Incoming D. E. Shaw Connect Undergraduate Fellow", description: "", date: "2025-09-9", endDate: "", status: "UPCOMING", location: "New York", image: "/activityLogos/deshaw.avif?height=50&width=50" },
+    { name: "Jane Street FOCUS Undergraduate Fellow", description: "", date: "2025-05-21", endDate: "2025-05-24", status: "UPCOMING", location: "New York", image: "/activityLogos/janestreetLogo.png?height=50&width=50" },
     { name: "Two Sigma 2025 New Seekers Summit", description: "", date: "2025-03-01", endDate: "2025-03-01", status: "COMPLETED", location: "Remote", image: "/activityLogos/twosigmaLogo.png?height=50&width=50" },
     { name: "Jane Street \"Odd Events\"", description: "", date: "2024-11-13", endDate: "2024-11-13", status: "COMPLETED", location: "UCLA, California", image: "/activityLogos/janestreetLogo.png?height=50&width=50" },
     { name: "Point72 Academy National Case Competition", description: "", date: "2024-10-02", endDate: "2024-10-14", status: "COMPLETED", location: "Remote / New York", image: "/activityLogos/point72Logo.png?height=50&width=50" },
     { name: "YHacks Estimathone", description: "Yale's Hackathon", date: "2024-10-05", endDate: "2024-10-05", status: "COMPLETED", location: "New Haven, Connecticut", image: "/activityLogos/yaleLogo.png" },
+    { name: "Jane Street UNBOXED Undergraduate Fellow", description: "", date: "2024-07-24", endDate: "2024-07-24", status: "COMPLETED", location: "New York, New York", image: "/activityLogos/janestreetLogo.png?height=50&width=50" },
     { name: "Jane Street Estimathon", description: "", date: "2024-07-24", endDate: "2024-07-24", status: "COMPLETED", location: "New York, New York", image: "/activityLogos/janestreetLogo.png?height=50&width=50" },
   ],
   Organizations: [
