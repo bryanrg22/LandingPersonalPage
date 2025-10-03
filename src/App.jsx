@@ -108,7 +108,7 @@ export default function LandingPage() {
               <p className="text-lg sm:text-xl mb-8 max-w-3xl mx-auto">
                 <span className="text-blue-400 block sm:inline">First-Generation Latino Software Developer</span>
                 <span className="hidden sm:inline"> and </span>
-                <span className="text-green-400 block sm:inline">First-Year Student</span>
+                <span className="text-green-400 block sm:inline"></span>
                 <span className="block sm:inline"> studying at </span>
                 <span className="text-red-400 block sm:inline">The University of Southern California</span>
               </p>
