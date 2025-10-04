@@ -107,10 +107,10 @@ export default function LandingPage() {
               </p>
               <p className="text-lg sm:text-xl mb-8 max-w-3xl mx-auto">
                 <span className="text-blue-400 block sm:inline">First-Generation Latino Software Developer</span>
-                <span className="hidden sm:inline"> and </span>
+                <span className="hidden sm:inline"> </span>
                 <span className="text-green-400 block sm:inline"></span>
                 <span className="block sm:inline"> studying at </span>
-                <span className="text-red-400 block sm:inline">The University of Southern California</span>
+                <span className="text-red-400 block sm:inline">USC 🌴</span>
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
                 <a href="https://www.linkedin.com/in/bryanrg22" className="flex items-center justify-center border border-white p-2 hover:bg-white hover:text-gray-900 transition-colors" target="_blank" rel="noopener noreferrer">
