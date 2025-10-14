@@ -46,19 +46,20 @@ const activities = {
     { name: "SkillsUSA Alumni", description: "Cpmpeted in Engineering Technology/Design", date: "", endDate: "", status: "", location: "", image: "/activityLogos/skillsusaLogo.png?height=50&width=50" },
     { name: "USC Third Space Youth Institute Alumni", description: "Participant of LACOE Summer 2023 Cohert. Learned the ACE-IT Skillset.", date: "", endDate: "", status: "", location: "", image: "/activityLogos/uscThirdSpace.jpg?height=50&width=50" },
   ],
-  Conferences: [
-    { name: "SHPE National Convention", description: "", date: "2024-10-30", endDate: "2024-11-04", status: "UPCOMING", location: "Anaheim, California", image: "/activityLogos/shpeLogo.png?height=50&width=50", highlight: "Accepted Fellow" },
-    { name: "Zoomtopia 2024", description: "", date: "2024-10-09", endDate: "2024-10-09", status: "COMPLETED", location: "Remote", image: "/activityLogos/zoomLogo.png?height=50&width=50" },
-    { name: "CodePath Emerging Engineers Summit", description: "", date: "2024-10-01", endDate: "2024-10-03", status: "COMPLETED", location: "Remote", image: "/activityLogos/codepathLogo.jpeg?height=50&width=50" },
-    { name: "GitHub Universe '24", description: "", date: "2024-09-29", endDate: "2024-09-30", status: "COMPLETED", location: "Remote", image: "/activityLogos/githubLogo.png?height=50&width=50" },
-    { name: "Snap Partner Summit 2024", description: "", date: "2024-09-17", endDate: "2024-09-17", status: "COMPLETED", location: "Remote", image: "/activityLogos/snapchatLogo.png?height=50&width=50" },
-    { name: "ColorStack's Fall '24 Career Fair", description: "", date: "2024-08-22", endDate: "2024-08-23", status: "COMPLETED", location: "Remote", image: "/activityLogos/colorstackLogo.jpeg?height=50&width=50" },
-    { name: "Roblox Building Blox", description: "Beyond The Code!", date: "2024-08-15", endDate: "2024-08-15", status: "COMPLETED", location: "Remote", image: "/activityLogos/robloxLogo.jpg?height=50&width=50" },
-    { name: "NASA Beyond STEM", description: "Exploring Diverse Internship Paths at NASA", date: "2024-08-08", endDate: "2024-08-08", status: "COMPLETED", location: "Remote", image: "/activityLogos/nasaLogo.png?height=50&width=50" },
-    { name: "NASA Internship Experience", description: "Insights from Interns and Mentors", date: "2024-07-26", endDate: "2024-07-26", status: "COMPLETED", location: "Remote", image: "/activityLogos/nasaLogo.png?height=50&width=50" },
-  ],
+  //Conferences: [
+  //  { name: "SHPE National Convention", description: "", date: "2024-10-30", endDate: "2024-11-04", status: "UPCOMING", location: "Anaheim, California", image: "/activityLogos/shpeLogo.png?height=50&width=50", highlight: "Accepted Fellow" },
+  //  { name: "Zoomtopia 2024", description: "", date: "2024-10-09", endDate: "2024-10-09", status: "COMPLETED", location: "Remote", image: "/activityLogos/zoomLogo.png?height=50&width=50" },
+  //  { name: "CodePath Emerging Engineers Summit", description: "", date: "2024-10-01", endDate: "2024-10-03", status: "COMPLETED", location: "Remote", image: "/activityLogos/codepathLogo.jpeg?height=50&width=50" },
+  //  { name: "GitHub Universe '24", description: "", date: "2024-09-29", endDate: "2024-09-30", status: "COMPLETED", location: "Remote", image: "/activityLogos/githubLogo.png?height=50&width=50" },
+  //  { name: "Snap Partner Summit 2024", description: "", date: "2024-09-17", endDate: "2024-09-17", status: "COMPLETED", location: "Remote", image: "/activityLogos/snapchatLogo.png?height=50&width=50" },
+  //  { name: "ColorStack's Fall '24 Career Fair", description: "", date: "2024-08-22", endDate: "2024-08-23", status: "COMPLETED", location: "Remote", image: "/activityLogos/colorstackLogo.jpeg?height=50&width=50" },
+  //  { name: "Roblox Building Blox", description: "Beyond The Code!", date: "2024-08-15", endDate: "2024-08-15", status: "COMPLETED", location: "Remote", image: "/activityLogos/robloxLogo.jpg?height=50&width=50" },
+  //  { name: "NASA Beyond STEM", description: "Exploring Diverse Internship Paths at NASA", date: "2024-08-08", endDate: "2024-08-08", status: "COMPLETED", location: "Remote", image: "/activityLogos/nasaLogo.png?height=50&width=50" },
+  //  { name: "NASA Internship Experience", description: "Insights from Interns and Mentors", date: "2024-07-26", endDate: "2024-07-26", status: "COMPLETED", location: "Remote", image: "/activityLogos/nasaLogo.png?height=50&width=50" },
+  //],
   USC: [
     { name: "USC Information Sciences Institute (ISI) — HUMANS Lab ", description: "Undergraduate Research Intern — Kalshi Prediction Markets & Causal Inference (2024 US Presidential Election-Bets Impact)", date: "05/14/2025", endDate: "", status: "LIVE", location: "Information Sciences Institute", image: "/activityLogos/uscisiLogo.jpg?height=50&width=50" },
+    { name: "Jane Street", description: "Selected 1 of 37 (UNBOXED ’24) and 1 of 14 (FOCUS ’25).  Wrote over 150+ lines of SQL for data analysis, and completed 30+ hours of coursework in statistics, market-making activities, and computer programming awarded a $2,000 scholarship. ", date: "", endDate: "", status: "", location: "New York", image: "/activityLogos/janestreetLogo.png?height=50&width=50" },
 
   ],
 }
@@ -180,6 +181,7 @@ export default function MyActivity() {
     updatedActivities.Hackathons?.find(a => a.name === "2025 HackTech"), 
     updatedActivities.Hackathons?.find(a => a.name === "2024 HackHarvard"), 
     updatedActivities.USC?.[0],  
+    updatedActivities.USC?.[1],
     updatedActivities.Organizations?.[0],  
     updatedActivities.Organizations?.[1],  
   ].filter(Boolean)
@@ -199,7 +201,7 @@ export default function MyActivity() {
         </div>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {Object.keys(activities).map((topic) => (
+          {Object.keys(activities).filter(topic => topic !== 'USC').map((topic) => (
             <button
               key={topic}
               className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${

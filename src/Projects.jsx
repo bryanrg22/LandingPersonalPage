@@ -1,10 +1,17 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp, ExternalLink, Github } from 'lucide-react';
 
+// Helper function to extract YouTube video ID from URL
+const extractYouTubeId = (url) => {
+  const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+  const match = url.match(regExp);
+  return (match && match[2].length === 11) ? match[2] : null;
+};
+
 const projects = [
   {
     "name": "Lambda Rim",
-    "description": "AI‑powered NBA fantasy betting hub that parses PrizePicks screenshots and answers “Is the over worth my money?” with transparent probabilistic models and live analytics.",
+    "description": "Full-Stack Statistical & ML Hub for NBA Fantasy Sports Betting - Achieving 78%+ win rate with $10 to $3,000 profit growth",
     "longDescription": "Last updated July 24, 2025\n - Lambda Rim analyzes your PrizePicks screenshot and delivers one clear answer: “Is the ‘over’ worth my money?” Our end‑to‑end pipeline—OCR → feature engineering → Poisson, Monte Carlo & GARCH probability models → ChatGPT‑powered rationale—runs in your browser.  \n  \nKey features:\n- Screenshot parsing (OCR) to extract player & threshold pairs  \n- Poisson probability, Monte Carlo simulation & GARCH volatility forecasts  \n- Real‑time NBA injury report scraping & automatic playoff‑mode stats  \n- Background Cloud Functions for auto‑settling bets and status updates  \n- React + Vite front end, Flask + Docker API on Google Cloud Run  \n- Firebase Firestore database, Cloud Functions & GitHub Actions CI/CD  \n- Privacy‑first authentication via Google/Microsoft/Firebase Auth",
     "website_url": "https://lambdarim.com",
     "skills": [
@@ -12,6 +19,7 @@ const projects = [
       "Vite",
       "Tailwind CSS",
       "Python",
+      "OCaml",
       "Flask",
       "Docker",
       "Google Cloud Run",
@@ -24,30 +32,49 @@ const projects = [
       "GARCH Volatility Model",
       "Pandas",
       "NumPy",
-      "OCR",
-      "Web Scraping"
+      "OpenCV",
+      "Tesseract OCR",
+      "NBA API",
+      "Web Scraping",
+      "pdfplumber"
     ],
     "videoUrl": "https://github.com/user-attachments/assets/ec796b28-824e-4374-8d9a-beedc7a0ed4e",
     "githubUrl": "https://github.com/bryanrg22/lambda-rim",
-    "image": "/projectsLogos/lambdarimLogo.png"
+    "image": "/projectsLogos/lambdarimLogo.png",
+    "bulletPoints": [
+      "Engineered a full-stack forecasting platform (Poisson, Monte Carlo, GARCH) for NBA sports betting picks, achieving a 78%+ win rate and profit growth from $10 to $3,000 in documented runs shipped via React with a Flask API in Docker on Cloud Run with GitHub Actions CI/CD.",
+      "Cut analysis time from 15 min to seconds by building an automated OCR to prediction pipeline (OpenCV + Tesseract, NBA API, Web-Scraped Injury Reports) with ML-derived probabilities and OpenAI ChatGPT rationales using requests + pdfplumber, nba_api, pandas + NumPy.",
+      "Designed a read-optimized Firestore Database schema (Active, History, Users) and a Cloud Scheduler to Cloud Functions + Google Cloud Run settlement pipeline that auto-archives results, reducing redundant reads and improving page latency."
+    ]
   },
   {
     "name": "Swerve",
-    "description": "Agentic AI co-pilot for industrial procurement optimization",
-    "longDescription": "Swerve (Voltway Procurement Management System) is an AI-driven procurement solution built with LangChain that ingests ERP data, CAD specs, and user uploads to forecast inventory needs, automate purchase-order drafting, and send Slack notifications. Using GPT-3.5-Turbo for tool orchestration and o4-mini for multi-step reasoning, Swerve delivers real-time risk analysis, actionable recommendations, and interactive dashboards—empowering non-technical users to manage complex supply chains effortlessly.",
-    "skills": [ "React.js", "Tailwind CSS", "Recharts", "MapLibre GL", "Python", "Flask", "Firebase", "LangChain", "OpenAI API", "Slack API"],
-    "videoUrl": "https://github.com/user-attachments/assets/9b1764ae-8a59-47af-8773-70a00b5dfb1d",
+    "description": "Winning Full-Stack Project At Caltech's 2025 HackTech Hackathon - 1st Place Dryft AI Challenge",
+    "longDescription": "Lead Developer of Swerve - 1st Place Winner at Caltech's HackTech 2025 Hackathon in the Dryft AI Challenge. Invited by Dryft to SF Neo offices for post-hackathon collaboration.\n\n🎯 **Key Achievements:**\n- Reduced procurement cycle time with \"Hugo\", a LangChain agent routing queries through GPT-3.5-turbo (tool selection) and o4-mini (multi-step reasoning)\n- Implemented Python/Flask APIs using CRUD to ingest CSVs, CAD files, and user uploads into structured Firestore\n- Wired Slack API to surface low-stock recommendations and automated notifications\n\n🛠️ **Technical Implementation:**\n- **Frontend:** React.js with Tailwind CSS, Recharts for data visualization, MapLibre GL for interactive maps\n- **Backend:** Python Flask APIs with Firebase Admin SDK for database interaction\n- **Database:** Firebase Firestore with comprehensive schema (orders, parts, inventory, sales, supply)\n- **AI Integration:** Hugo AI assistant with LangChain, GPT-3.5-turbo, and GPT-4o for procurement insights\n- **Features:** Interactive dashboards, real-time analytics, supply chain mapping, automated notifications\n\n🏆 **Project Impact:** Successfully created a truly proactive procurement assistant that anticipates needs and helps teams stay ahead of challenges in complex supply chain environments.",
+    "skills": [ "React.js", "Tailwind CSS", "Recharts", "MapLibre GL", "Python", "Flask", "Firebase", "Firebase Admin SDK", "LangChain", "GPT-3.5-turbo", "GPT-4o", "Slack API", "Firestore", "CRUD APIs"],
+    "videoUrl": "https://youtu.be/wa4kqvqhoZc?si=qjCwxTQl4N-5ri5j",
     "githubUrl": "https://github.com/bryanrg22/CalTech-Hacks",
-    "image": "/projectsLogos/swerveLogo.png"
+    "devpostUrl": "https://devpost.com/software/swerve-gqmenk",
+    "image": "/projectsLogos/swerveLogo.png",
+    "bulletPoints": [
+      "Reduced procurement cycle time with \"Hugo\", a LangChain agent routing queries through GPT-3.5-turbo (tool selection) and o4-mini (multi-step reasoning) to predict inventory gaps, shipped via React + Tailwind CSS",
+      "Implemented Python/Flask APIs using CRUD to ingest CSVs, CAD files, and user uploads into a structured Firestore (orders, parts, inventory, sales, supply) and wired Slack API to surface low-stock recommendations; Invited by Dryft to SF Neo offices for post-hackathon collaboration."
+    ]
   },
   {
     "name": "CleanSweep",
-    "description": "Optimizing Waste Collection for Smarter Cities",
-    "longDescription": "CleanSweep provides an innovative solution to waste management by using real-time data to optimize garbage collection routes, minimizing inefficiency and reducing environmental impact. By integrating hardware and software, it offers dynamic routing for garbage truck drivers based on live conditions like trash bin levels and traffic. This project aims to create cleaner cities by improving resource allocation and reducing the strain on landfills through smarter waste management.",
-    "skills": ["React.js", "Tailwind CSS", "Vite", "Python", "Flask", "Firebase"],
-    "videoUrl": "https://github.com/user-attachments/assets/0f2393c9-9ef4-4f08-b809-f02884e8ea5a",
+    "description": "Smart City Waste Management - Real-time Route Optimization Using OpenCV & ML",
+    "longDescription": "Smart city waste management solution using real-time data to optimize garbage collection routes and reduce environmental impact. Worked on the contour algorithm using OpenCV to detect trash levels in makeshift garbage bins, as well as implementing Random Forest Classifier model in Databricks for optimal route recommendations.\n\n🎯 **Key Features:**\n- Real-time trash level detection using OpenCV contour algorithms\n- Dynamic routing optimization based on bin capacity, traffic, and days since last pickup\n- Machine learning-powered route recommendations using Random Forest Classifier\n- Interactive driver portal with live route updates\n- Hardware integration with Raspberry Pi and LED feedback systems\n\n🛠️ **Technical Implementation:**\n- **Hardware:** Phone cameras + Raspberry Pi with OpenCV for trash level detection\n- **Backend:** Python Flask APIs with Databricks for ML processing\n- **Frontend:** React + TailwindCSS portal for drivers with Terraform deployment\n- **ML Pipeline:** Random Forest Classifier with adjacency matrix for route optimization\n- **APIs:** Google Maps API integration for traffic data and route planning\n- **Infrastructure:** Terraform deployment with real-time data synchronization\n\n🏆 **Impact:** Successfully reduced waste buildup in prone areas, improved air quality, and created more efficient resource allocation for smart cities.",
+    "skills": ["React.js", "Tailwind CSS", "Vite", "Python", "Flask", "Firebase", "OpenCV", "Raspberry Pi", "Databricks", "Random Forest", "Google Maps API", "Terraform", "Machine Learning"],
+    "videoUrl": "https://youtu.be/iU_6u-RygyQ?si=5D8FGV95vuWMNSQx",
     "githubUrl": "https://github.com/DPulavarthy/HackHarvard",
-    "image": "/projectsLogos/cleansweeplogo.png"
+    "devpostUrl": "https://devpost.com/software/cleansweep-tjq36w",
+    "image": "/projectsLogos/cleansweeplogo.png",
+    "bulletPoints": [
+      "Developed real-time trash level detection system using OpenCV contour algorithms on Raspberry Pi hardware, processing phone camera images to measure bin capacity and sending data to local server for route optimization.",
+      "Implemented Random Forest Classifier model in Databricks to optimize garbage collection routes based on trash levels, Google Maps API traffic data, and days since last pickup, using adjacency matrix to retrieve highest priority paths and minimize emissions.",
+      "Built interactive driver portal using React and TailwindCSS with Terraform deployment, displaying optimized routes based on live hardware data and allowing drivers to adjust routes dynamically while updating progress in real-time."
+    ]
   },
 ];
 
@@ -80,14 +107,29 @@ const ProjectCard = ({ project }) => {
           </div>
         </div>
         <div className="mb-4">
-          <video controls className="w-full h-auto rounded-lg">
-            <source src={project.videoUrl} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          {project.videoUrl.includes('youtu.be') || project.videoUrl.includes('youtube.com') ? (
+            <iframe
+              className="w-full h-48 rounded-lg"
+              src={`https://www.youtube.com/embed/${extractYouTubeId(project.videoUrl)}`}
+              title={`${project.name} Demo`}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          ) : (
+            <video controls className="w-full h-auto rounded-lg">
+              <source src={project.videoUrl} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          )}
         </div>
         {expanded && (
           <div className="mb-4">
-            <p className="text-gray-300">{project.longDescription}</p>
+            <ul className="text-gray-300 list-disc pl-5 space-y-2">
+              {project.bulletPoints?.map((point, index) => (
+                <li key={index} className="text-sm leading-relaxed">{point}</li>
+              ))}
+            </ul>
           </div>
         )}
         <div className="flex justify-between items-center">
@@ -107,6 +149,16 @@ const ProjectCard = ({ project }) => {
             >
               <Github className="w-6 h-6" />
             </a>
+            {project.devpostUrl && (
+              <a
+                href={project.devpostUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-white transition-colors"
+              >
+                <img src="/websiteIcon/devpostIcon.png" alt="DevPost" className="w-6 h-6" style={{filter: 'brightness(0) invert(1) contrast(2) drop-shadow(0 2px 4px rgba(0,0,0,0.3))'}} />
+              </a>
+            )}
           </div>
         </div>
       </div>

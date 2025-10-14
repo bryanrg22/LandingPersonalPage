@@ -1,5 +1,5 @@
 import React, { useRef, useCallback, useEffect, useState } from 'react'
-import { Github, Linkedin, Handshake, GraduationCap, Code } from "lucide-react"
+import { Github, Linkedin, GraduationCap } from "lucide-react"
 import Header from './Header'
 import MyActivity from './Activity'
 import WorkExperience from './WorkExperience'
@@ -126,13 +126,12 @@ export default function LandingPage() {
                   <span>Google Scholar</span>
                 </a>
                 <a href="https://devpost.com/bryanrg22?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" className="flex items-center justify-center border border-white p-3 hover:bg-white hover:text-gray-900 transition-colors" target="_blank" rel="noopener noreferrer">
-                  <Code className="mr-2" size={20} />
+                  <img src="/websiteIcon/devpostIcon.png" alt="DevPost" className="mr-2 w-6 h-6" style={{filter: 'brightness(0) invert(1) contrast(2) drop-shadow(0 2px 4px rgba(0,0,0,0.3))'}} />
                   <span>DevPost</span>
                 </a>
                 <a href="https://usc.joinhandshake.com/profiles/bryanrg22" className="flex items-center justify-center border border-white p-3 hover:bg-white hover:text-gray-900 transition-colors" target="_blank" rel="noopener noreferrer">
-                  <Handshake className="mr-2" size={20} />
-                  <span>HandShake</span>
-                  <span></span>
+                  <img src="/websiteIcon/handshakeLogo.png" alt="Handshake" className="mr-2 w-6 h-6" style={{filter: 'brightness(0) invert(1) contrast(2) drop-shadow(0 2px 4px rgba(0,0,0,0.3))'}} />
+                  <span>Handshake</span>
                 </a>
               </div>
             </div>

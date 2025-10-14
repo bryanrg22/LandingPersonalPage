@@ -212,7 +212,7 @@ export default function WorkExperience() {
     setShowAll(true);
   };
 
-  const displayedExperiences = showAll ? experiences : experiences.slice(0, 2);
+  const displayedExperiences = showAll ? experiences : experiences.slice(0, 3);
 
   return (
     <div className="bg-gray-900 text-white py-16">
@@ -236,7 +236,7 @@ export default function WorkExperience() {
             ref={el => experienceRefs.current[index] = el}
           />
         ))}
-        {experiences.length > 2 && (
+        {experiences.length > 3 && (
           <div className="text-center mt-12">
             <button
               className="bg-gray-800 text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-gray-700 transition-colors flex items-center mx-auto"
