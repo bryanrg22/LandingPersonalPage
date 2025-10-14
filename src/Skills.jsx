@@ -3,20 +3,24 @@ import ScrollingLogos from './ScrollingLogos';
 
 const skillCategories = [
   {
-    name: "Languages",
-    skills: ["Python", "C/C++", "Java", "JavaScript", "HTML/CSS", "SQL", "GraphQL"]
+    name: "Programming Languages",
+    skills: ["C", "C++", "Python", "Java", "JavaScript", "TypeScript", "SQL", "OCaml"]
   },
   {
-    name: "Frameworks",
-    skills: ["Flask", "React.js", "Next.js", "TailwindCSS", "Firebase", "FastAPI"]
+    name: "ML & Data Science",
+    skills: ["PyTorch", "OpenCV", "NumPy", "Pandas", "Matplotlib", "TensorFlow"]
   },
   {
-    name: "Libraries",
-    skills: ["Anaconda", "Pandas", "NumPy", "Matplotlib", "PyTorch", "TensorFlow"]
+    name: "Web Development",
+    skills: ["React", "Vite", "Tailwind CSS", "Flask", "FastAPI", "REST APIs", "HTML/CSS"]
   },
   {
-    name: "Other",
-    skills: ["APIs", "GraphQL", "Firebase", "Google Gemini", "OpenAI's ChatGPT"]
+    name: "Cloud & DevOps",
+    skills: ["Firebase", "Google Cloud Run", "Docker", "AWS", "GitHub Actions", "Linux"]
+  },
+  {
+    name: "Tools & Version Control",
+    skills: ["Git", "GitHub", "CI/CD", "Firebase Auth", "Firestore", "Cloud Functions"]
   }
 ];
 
@@ -50,7 +54,7 @@ export default function Skills() {
         <div className="mb-12">
           <ScrollingLogos />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
             <SkillCategory key={index} category={category.name} skills={category.skills} />
           ))}

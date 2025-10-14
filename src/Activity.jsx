@@ -9,11 +9,12 @@ const goldShine = keyframes`
 
 const activities = {
   Hackathons: [
-    { name: "HackTech", description: "California Institute of Technology", date: "2025-04-26", endDate: "2025-04-28", status: "COMPLETED", location: "Pasadena, California", image: "/activityLogos/caltechLogo.png?height=50&width=50", highlight: "Hackathon Winner" },
+    { name: "MITHacks ", description: "MIT - Massachusetts Institute of Technology", date: "2025-09-14", endDate: "2025-09-15", status: "COMPLETED", location: "Boston, Massachusetts", image: "/activityLogos/mitLogo.png?height=50&width=50" },
+    { name: "2025 HackTech", description: "California Institute of Technology", date: "2025-04-26", endDate: "2025-04-28", status: "COMPLETED", location: "Pasadena, California", image: "/activityLogos/caltechLogo.png?height=50&width=50", highlight: "Hackathon Winner" },
     { name: "TreeHacks", description: "Stanford University", date: "2025-02-15", endDate: "2025-02-17", status: "COMPLETED", location: "Stanford, California", image: "/activityLogos/stanfordLogo.png?height=50&width=50" },
     { name: "MIT iQuHACK", description: "MIT - Massachusetts Institute of Technology", date: "2025-01-31", endDate: "2025-02-02", status: "COMPLETED", location: "Boston, Massachusetts", image: "/activityLogos/mitLogo.png?height=50&width=50" },
     { name: "HackPrinceton", description: "Princeton", date: "2024-11-09", endDate: "2024-11-11", status: "COMPLETED", location: "Princeton, New Jersey", image: "/activityLogos/princetonLogo.png?height=50&width=50" },
-    { name: "HackHarvard", description: "Harvard", date: "2024-10-11", endDate: "2024-10-13", status: "COMPLETED", location: "Cambridge, Massachusetts", image: "/activityLogos/harvardLogo.png?height=50&width=50", highlight: "Hackathon Winner" },
+    { name: "2024 HackHarvard", description: "Harvard", date: "2024-10-11", endDate: "2024-10-13", status: "COMPLETED", location: "Cambridge, Massachusetts", image: "/activityLogos/harvardLogo.png?height=50&width=50", highlight: "Hackathon Winner" },
     { name: "YHacks", description: "Yale", date: "2024-10-04", endDate: "2024-10-06", status: "COMPLETED", location: "New Haven, Connecticut", image: "/activityLogos/yaleLogo.png" },
     { name: "HackGT", description: "Georgia Tech", date: "2024-09-27", endDate: "2024-09-29", status: "Flight Canceled Due to Hurricane Helene", location: "Atlanta, Georgia", image: "/activityLogos/georgiatechLogo.png?height=50&width=50" },
     { name: "PennApps XXV", description: "UPenn", date: "2024-09-20", endDate: "2024-09-22", status: "COMPLETED", location: "Philadelphia, Pennsylvania", image: "/activityLogos/upennLogo.png?height=50&width=50" },
@@ -21,7 +22,7 @@ const activities = {
     { name: "AstroHacks", description: "High School Hackathon", date: "2024-04-13", endDate: "2024-04-13", status: "COMPLETED", location: "Irvine, California", image: "/activityLogos/astrohacksLogo.jpeg?height=50&width=50", highlight: "Hackathon Winner" },
   ],
   Quant_Trading: [
-    { name: "Incoming D. E. Shaw Connect Undergraduate Fellow", description: "", date: "2025-09-9", endDate: "", status: "UPCOMING", location: "New York", image: "/activityLogos/deshaw.avif?height=50&width=50" },
+    { name: "D. E. Shaw Connect Undergraduate Fellow", description: "", date: "2025-09-9", endDate: "", status: "UPCOMING", location: "New York", image: "/activityLogos/deshaw.avif?height=50&width=50" },
     { name: "Jane Street FOCUS Undergraduate Fellow", description: "", date: "2025-05-21", endDate: "2025-05-24", status: "UPCOMING", location: "New York", image: "/activityLogos/janestreetLogo.png?height=50&width=50" },
     { name: "Two Sigma 2025 New Seekers Summit", description: "", date: "2025-03-01", endDate: "2025-03-01", status: "COMPLETED", location: "Remote", image: "/activityLogos/twosigmaLogo.png?height=50&width=50" },
     { name: "Jane Street \"Odd Events\"", description: "", date: "2024-11-13", endDate: "2024-11-13", status: "COMPLETED", location: "UCLA, California", image: "/activityLogos/janestreetLogo.png?height=50&width=50" },
@@ -31,10 +32,12 @@ const activities = {
     { name: "Jane Street Estimathon", description: "", date: "2024-07-24", endDate: "2024-07-24", status: "COMPLETED", location: "New York, New York", image: "/activityLogos/janestreetLogo.png?height=50&width=50" },
   ],
   Organizations: [
-    { name: "NASA L'SPACE", description: "Proposal Writing and Evaluation Experience", date: "2025-01-23", endDate: "2025-05-22", status: "LIVE", location: "", image: "/activityLogos/nasalspaceLogo.jpeg?height=50&width=50", highlight: "" },
-    { name: "Goldman Sachs", description: "Possibilities Summit", date: "2025-01-01", endDate: "", status: "LIVE", location: "", image: "/activityLogos/GoldmanSachsLogo.png?height=50&width=50", highlight: "" },
-    { name: "Amazon AWS", description: "AI & ML AI Programming with Python Nanodegree - Winter Cohort", date: "", endDate: "", status: "LIVE", location: "", image: "/activityLogos/awsLogo.jpg?height=50&width=50", highlight: "Scholarship Recipient" },
-    { name: "CodePath", description: "Technical Interview Course Prep - Fall Cohort", date: "", endDate: "", status: "LIVE", location: "", image: "/activityLogos/codepathLogo.jpeg?height=50&width=50", highlight: "Accepted Fellow" },
+    { name: "LavaLab", description: "Software Developer at USC's Premier Startup Incubator", date: "2025-09-01", endDate: "", status: "LIVE", location: "Los Angeles, California, United States", image: "/activityLogos/lavalabLogo.jpg", highlight: "" },
+    { name: "Quant SC", description: "Software Developer at USC's Premier Quantitative Trading Society", date: "2025-09-01", endDate: "", status: "LIVE", location: "Los Angeles, California, United States", image: "/activityLogos/quantscLogo.ico", highlight: "" },
+    { name: "NASA L'SPACE", description: "Proposal Writing and Evaluation Experience", date: "2025-01-23", endDate: "2025-05-22", status: "", location: "", image: "/activityLogos/nasalspaceLogo.jpeg?height=50&width=50", highlight: "" },
+    { name: "Goldman Sachs", description: "Possibilities Summit", date: "", endDate: "", status: "", location: "", image: "/activityLogos/GoldmanSachsLogo.png?height=50&width=50", highlight: "" },
+    { name: "Amazon AWS", description: "AI & ML AI Programming with Python Nanodegree - Winter Cohort", date: "", endDate: "", status: "", location: "", image: "/activityLogos/awsLogo.jpg?height=50&width=50", highlight: "Scholarship Recipient" },
+    { name: "CodePath", description: "Technical Interview Course Prep - Fall Cohort", date: "", endDate: "", status: "", location: "", image: "/activityLogos/codepathLogo.jpeg?height=50&width=50", highlight: "Accepted Fellow" },
     { name: "Color Stack", description: "Black and Latinx students in Computing", date: "", endDate: "", status: "", location: "", image: "/activityLogos/colorstackLogo.jpeg?height=50&width=50" },
     { name: "SHPE", description: "Society of Hispanic Professional Engineers", date: "", endDate: "", status: "", location: "", image: "/activityLogos/shpeLogo.png?height=50&width=50" },
     { name: "ALPFA", description: "Association of Latino Professionals For America", date: "", endDate: "", status: "", location: "", image: "/activityLogos/alpfaLogo.jpg?height=50&width=50" },
@@ -55,14 +58,8 @@ const activities = {
     { name: "NASA Internship Experience", description: "Insights from Interns and Mentors", date: "2024-07-26", endDate: "2024-07-26", status: "COMPLETED", location: "Remote", image: "/activityLogos/nasaLogo.png?height=50&width=50" },
   ],
   USC: [
-    { name: "HUMANS LAB, The University of Southern California Information Sciences Institute", description: "Undergraduate Research Intern", date: "", endDate: "", status: "LIVE", location: "Information Sciences Institute", image: "/activityLogos/uscisiLogo.jpg?height=50&width=50" },
-    { name: "USC Viterbi Engineering", description: "Career & Internship Fair - Fall 2024", date: "2024-10-02", endDate: "2024-10-02", status: "COMPLETED", location: "USC Campus", image: "/activityLogos/uscLogo.png?height=50&width=50" },
-    { name: "USC LeetCode Jam Night", description: "", date: "2024-09-18", endDate: "2024-09-18", status: "COMPLETED", location: "USC Campus", image: "/activityLogos/uscLogo.png?height=50&width=50" },
-    { name: "USC Fall Career Fair 2024", description: "", date: "2024-09-12", endDate: "2024-09-12", status: "COMPLETED", location: "USC Campus", image: "/activityLogos/uscLogo.png?height=50&width=50" },
-    { name: "USC Entrepreneurship Expo", description: "", date: "2024-09-05", endDate: "2024-09-05", status: "COMPLETED", location: "USC Campus", image: "/activityLogos/uscLogo.png?height=50&width=50" },
-    { name: "USC Viterbi Fair", description: "", date: "2024-09-05", endDate: "2024-09-05", status: "COMPLETED", location: "USC Campus", image: "/activityLogos/uscLogo.png?height=50&width=50" },
-    { name: "USC Career Carnival", description: "", date: "2024-09-04", endDate: "2024-09-04", status: "COMPLETED", location: "USC Campus", image: "/activityLogos/uscLogo.png?height=50&width=50" },
-    { name: "USC Involvement Fair", description: "", date: "2024-08-29", endDate: "2024-08-29", status: "COMPLETED", location: "USC Campus", image: "/activityLogos/uscLogo.png?height=50&width=50" },
+    { name: "USC Information Sciences Institute (ISI) — HUMANS Lab ", description: "Undergraduate Research Intern — Kalshi Prediction Markets & Causal Inference (2024 US Presidential Election-Bets Impact)", date: "05/14/2025", endDate: "", status: "LIVE", location: "Information Sciences Institute", image: "/activityLogos/uscisiLogo.jpg?height=50&width=50" },
+
   ],
 }
 
@@ -84,13 +81,13 @@ const updateActivityStatus = (activity) => {
 
 const HighlightedActivity = ({ activity }) => (
   <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg p-6 relative group transition-all duration-300 hover:shadow-2xl hover:scale-105">
-    {activity.name === "HackHarvard" || activity.name === "HackTech" ? (
+    {activity.name === "2024 HackHarvard" || activity.name === "2025 HackTech" ? (
       <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-yellow-600 opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
     ) : (
       <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
     )}
     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-25 animate-shine"></div>
-    {activity.name === "HackHarvard" || activity.name === "HackTech" && (
+    {activity.name === "2024 HackHarvard" || activity.name === "2025 HackTech" && (
       <div 
         className="absolute inset-0 bg-gradient-to-r from-transparent via-yellow-300 to-transparent opacity-25"
         style={{
@@ -180,10 +177,11 @@ export default function MyActivity() {
   const displayedActivities = showAll ? updatedActivities[selectedTopic] : updatedActivities[selectedTopic]?.slice(0, 4)
 
   const highlightedActivities = [
-    updatedActivities.Hackathons?.find(a => a.name === "HackTech"), 
-    updatedActivities.Hackathons?.find(a => a.name === "HackHarvard"), 
-    updatedActivities.Quant_Trading?.[0],  
+    updatedActivities.Hackathons?.find(a => a.name === "2025 HackTech"), 
+    updatedActivities.Hackathons?.find(a => a.name === "2024 HackHarvard"), 
     updatedActivities.USC?.[0],  
+    updatedActivities.Organizations?.[0],  
+    updatedActivities.Organizations?.[1],  
   ].filter(Boolean)
 
   return (

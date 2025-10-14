@@ -1,5 +1,5 @@
 import React, { useRef, useCallback, useEffect, useState } from 'react'
-import { Github, Linkedin, Handshake } from "lucide-react"
+import { Github, Linkedin, Handshake, GraduationCap, Code } from "lucide-react"
 import Header from './Header'
 import MyActivity from './Activity'
 import WorkExperience from './WorkExperience'
@@ -112,21 +112,27 @@ export default function LandingPage() {
                 <span className="block sm:inline"> studying at </span>
                 <span className="text-red-400 block sm:inline">USC 🌴</span>
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
-                <a href="https://www.linkedin.com/in/bryanrg22" className="flex items-center justify-center border border-white p-2 hover:bg-white hover:text-gray-900 transition-colors" target="_blank" rel="noopener noreferrer">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 max-w-4xl mx-auto">
+                <a href="https://www.linkedin.com/in/bryanrg22" className="flex items-center justify-center border border-white p-3 hover:bg-white hover:text-gray-900 transition-colors" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="mr-2" size={20} />
-                  <span className="sm:hidden">LinkedIn</span>
-                  <span className="hidden sm:inline">LinkedIn</span>
+                  <span>LinkedIn</span>
                 </a>
-                <a href="https://www.github.com/bryanrg22" className="flex items-center justify-center border border-white p-2 hover:bg-white hover:text-gray-900 transition-colors" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.github.com/bryanrg22" className="flex items-center justify-center border border-white p-3 hover:bg-white hover:text-gray-900 transition-colors" target="_blank" rel="noopener noreferrer">
                   <Github className="mr-2" size={20} />
-                  <span className="sm:hidden">GitHub</span>
-                  <span className="hidden sm:inline">GitHub</span>
+                  <span>GitHub</span>
                 </a>
-                <a href="https://usc.joinhandshake.com/profiles/bryanrg22" className="flex items-center justify-center border border-white p-2 hover:bg-white hover:text-gray-900 transition-colors" target="_blank" rel="noopener noreferrer">
+                <a href="https://scholar.google.com/citations?user=x5W6xScAAAAJ&hl=en" className="flex items-center justify-center border border-white p-3 hover:bg-white hover:text-gray-900 transition-colors" target="_blank" rel="noopener noreferrer">
+                  <GraduationCap className="mr-2" size={20} />
+                  <span>Google Scholar</span>
+                </a>
+                <a href="https://devpost.com/bryanrg22?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" className="flex items-center justify-center border border-white p-3 hover:bg-white hover:text-gray-900 transition-colors" target="_blank" rel="noopener noreferrer">
+                  <Code className="mr-2" size={20} />
+                  <span>DevPost</span>
+                </a>
+                <a href="https://usc.joinhandshake.com/profiles/bryanrg22" className="flex items-center justify-center border border-white p-3 hover:bg-white hover:text-gray-900 transition-colors" target="_blank" rel="noopener noreferrer">
                   <Handshake className="mr-2" size={20} />
-                  <span className="sm:hidden">Handshake</span>
-                  <span className="hidden sm:inline">Handshake</span>
+                  <span>HandShake</span>
+                  <span></span>
                 </a>
               </div>
             </div>
