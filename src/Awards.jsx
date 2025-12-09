@@ -3,6 +3,15 @@ import { Trophy, Award, Medal, MapPin } from 'lucide-react';
 
 const awards = [
   {
+    title: "LavaLab Demo Night F’25",
+    description: "(Best Traction) Demo Night Winner",
+    location: "Los Angeles, CA",
+    year: "2025",
+    icon: "Trophy",
+    image: "/awardsLogo/lava_award.jpg",
+    logo: "/activityLogos/lavalabLogo.jpg"
+  },
+  {
     title: "CalTech's HackTech Hackathon",
     description: "(Winner) Dryft Challenge Winner",
     location: "Pasadena, CA",

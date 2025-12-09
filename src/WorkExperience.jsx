@@ -218,16 +218,22 @@ export default function WorkExperience() {
     <div className="bg-gray-900 text-white py-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold mb-12 text-center">Experience</h2>
-        <div className="flex justify-center space-x-4 mb-8">
-          {experiences.map((exp, index) => (
-            <img
-              key={index}
-              src={exp.logo}
-              alt={`${exp.company} logo`}
-              className="w-12 h-12 rounded-full object-cover cursor-pointer transition-transform hover:scale-110"
-              onClick={() => scrollToExperience(index)}
-            />
-          ))}
+        <div className="flex justify-center mb-8">
+          <div
+            className="flex items-center gap-4 overflow-x-auto px-2 sm:px-4 py-2 w-full max-w-full"
+            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+          >
+            <style>{`.no-scrollbar::-webkit-scrollbar { display: none; }`}</style>
+            {experiences.map((exp, index) => (
+              <img
+                key={index}
+                src={exp.logo}
+                alt={`${exp.company} logo`}
+                className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover flex-shrink-0 cursor-pointer ring-1 ring-white/30 transition-transform hover:scale-110"
+                onClick={() => scrollToExperience(index)}
+              />
+            ))}
+          </div>
         </div>
         {displayedExperiences.map((exp, index) => (
           <ExperienceItem 

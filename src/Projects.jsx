@@ -10,6 +10,41 @@ const extractYouTubeId = (url) => {
 
 const projects = [
   {
+    "name": "Basis",
+    "description": "AI-assisted cost segregation platform that accelerates engineer-led depreciation studies",
+    "longDescription": "Basis is an AI-assisted, human-in-the-loop platform for residential-focused cost segregation firms. It orchestrates vision models, RAG, and structured workflows to turn hundreds of photos, sketches, and appraisals into IRS-ready, defensible reports—while keeping engineers in control.",
+    "skills": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "TailwindCSS",
+      "Python",
+      "FastAPI",
+      "PyTorch",
+      "OpenAI Vision",
+      "YOLOv8",
+      "CLIP",
+      "Places365",
+      "OpenAI",
+      "Gemini",
+      "Firebase",
+      "Firestore",
+      "Firebase Storage",
+      "Firebase Auth",
+      "Google Cloud Run",
+      "Docker",
+      "RAG"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=ZpUEYUvN5II&feature=youtu.be",
+    "githubUrl": "https://github.com/bryanrg22/Basis_Info",
+    "image": "/projectsLogos/basis_logo.png",
+    "bulletPoints": [
+      "AI-assisted cost segregation platform for residential-focused firms; human-in-the-loop workflow that produces IRS-ready, defensible reports and accelerates analysis.",
+      "Automates appraisal-to-constraints extraction, room and object classification, engineering takeoffs, and IRS-grounded asset/cost classification with review checkpoints at every stage.",
+      "Traction: 2 paying users (CSSI, CBIZ) and design partners validating 50%+ faster workflows; Winner – LavaLab Fall 2025 Best Traction."
+    ]
+  },
+  {
     "name": "Lambda Rim",
     "description": "Full-Stack Statistical & ML Hub for NBA Fantasy Sports Betting - Achieving 78%+ win rate with $10 to $3,000 profit growth",
     "longDescription": "Last updated July 24, 2025\n - Lambda Rim analyzes your PrizePicks screenshot and delivers one clear answer: “Is the ‘over’ worth my money?” Our end‑to‑end pipeline—OCR → feature engineering → Poisson, Monte Carlo & GARCH probability models → ChatGPT‑powered rationale—runs in your browser.  \n  \nKey features:\n- Screenshot parsing (OCR) to extract player & threshold pairs  \n- Poisson probability, Monte Carlo simulation & GARCH volatility forecasts  \n- Real‑time NBA injury report scraping & automatic playoff‑mode stats  \n- Background Cloud Functions for auto‑settling bets and status updates  \n- React + Vite front end, Flask + Docker API on Google Cloud Run  \n- Firebase Firestore database, Cloud Functions & GitHub Actions CI/CD  \n- Privacy‑first authentication via Google/Microsoft/Firebase Auth",
