@@ -112,26 +112,26 @@ export default function LandingPage() {
                 <span className="block sm:inline"> studying at </span>
                 <span className="text-red-400 block sm:inline">USC 🌴</span>
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 max-w-3xl mx-auto">
-                <a href="https://www.linkedin.com/in/bryanrg22" className="group flex items-center justify-between sm:justify-center gap-3 rounded-xl border border-white/70 bg-white/5 px-4 py-3 sm:py-4 shadow-lg hover:-translate-y-0.5 hover:bg-white hover:text-gray-900 transition-all" target="_blank" rel="noopener noreferrer">
-                  <Linkedin className="w-6 h-6 text-white group-hover:text-gray-900" />
-                  <span className="font-medium">LinkedIn</span>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2 max-w-3xl mx-auto px-1">
+                <a href="https://www.linkedin.com/in/bryanrg22" className="group flex items-center justify-between sm:justify-center gap-2 rounded-lg border border-white/60 bg-white/5 px-3 py-2 shadow hover:bg-white hover:text-gray-900 transition-all" target="_blank" rel="noopener noreferrer">
+                  <Linkedin className="w-5 h-5 text-white group-hover:text-gray-900" />
+                  <span className="text-sm font-medium">LinkedIn</span>
                 </a>
-                <a href="https://www.github.com/bryanrg22" className="group flex items-center justify-between sm:justify-center gap-3 rounded-xl border border-white/70 bg-white/5 px-4 py-3 sm:py-4 shadow-lg hover:-translate-y-0.5 hover:bg-white hover:text-gray-900 transition-all" target="_blank" rel="noopener noreferrer">
-                  <Github className="w-6 h-6 text-white group-hover:text-gray-900" />
-                  <span className="font-medium">GitHub</span>
+                <a href="https://www.github.com/bryanrg22" className="group flex items-center justify-between sm:justify-center gap-2 rounded-lg border border-white/60 bg-white/5 px-3 py-2 shadow hover:bg-white hover:text-gray-900 transition-all" target="_blank" rel="noopener noreferrer">
+                  <Github className="w-5 h-5 text-white group-hover:text-gray-900" />
+                  <span className="text-sm font-medium">GitHub</span>
                 </a>
-                <a href="https://scholar.google.com/citations?user=x5W6xScAAAAJ&hl=en" className="group flex items-center justify-between sm:justify-center gap-3 rounded-xl border border-white/70 bg-white/5 px-4 py-3 sm:py-4 shadow-lg hover:-translate-y-0.5 hover:bg-white hover:text-gray-900 transition-all" target="_blank" rel="noopener noreferrer">
-                  <GraduationCap className="w-6 h-6 text-white group-hover:text-gray-900" />
-                  <span className="font-medium">Google Scholar</span>
+                <a href="https://scholar.google.com/citations?user=x5W6xScAAAAJ&hl=en" className="group flex items-center justify-between sm:justify-center gap-2 rounded-lg border border-white/60 bg-white/5 px-3 py-2 shadow hover:bg-white hover:text-gray-900 transition-all" target="_blank" rel="noopener noreferrer">
+                  <GraduationCap className="w-5 h-5 text-white group-hover:text-gray-900" />
+                  <span className="text-sm font-medium">Google Scholar</span>
                 </a>
-                <a href="https://devpost.com/bryanrg22?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" className="group flex items-center justify-between sm:justify-center gap-3 rounded-xl border border-white/70 bg-white/5 px-4 py-3 sm:py-4 shadow-lg hover:-translate-y-0.5 hover:bg-white hover:text-gray-900 transition-all" target="_blank" rel="noopener noreferrer">
-                  <img src="/websiteIcon/devpostIcon.png" alt="DevPost" className="w-6 h-6" style={{filter: 'brightness(0) invert(1) contrast(2) drop-shadow(0 2px 4px rgba(0,0,0,0.3))'}} />
-                  <span className="font-medium">DevPost</span>
+                <a href="https://devpost.com/bryanrg22?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" className="group flex items-center justify-between sm:justify-center gap-2 rounded-lg border border-white/60 bg-white/5 px-3 py-2 shadow hover:bg-white hover:text-gray-900 transition-all" target="_blank" rel="noopener noreferrer">
+                  <img src="/websiteIcon/devpostIcon.png" alt="DevPost" className="w-5 h-5" style={{filter: 'brightness(0) invert(1) contrast(2) drop-shadow(0 2px 4px rgba(0,0,0,0.3))'}} />
+                  <span className="text-sm font-medium">DevPost</span>
                 </a>
-                <a href="https://usc.joinhandshake.com/profiles/bryanrg22" className="group flex items-center justify-between sm:justify-center gap-3 rounded-xl border border-white/70 bg-white/5 px-4 py-3 sm:py-4 shadow-lg hover:-translate-y-0.5 hover:bg-white hover:text-gray-900 transition-all" target="_blank" rel="noopener noreferrer">
-                  <img src="/websiteIcon/handshakeLogo.png" alt="Handshake" className="w-6 h-6" style={{filter: 'brightness(0) invert(1) contrast(2) drop-shadow(0 2px 4px rgba(0,0,0,0.3))'}} />
-                  <span className="font-medium">Handshake</span>
+                <a href="https://usc.joinhandshake.com/profiles/bryanrg22" className="group flex items-center justify-between sm:justify-center gap-2 rounded-lg border border-white/60 bg-white/5 px-3 py-2 shadow hover:bg-white hover:text-gray-900 transition-all" target="_blank" rel="noopener noreferrer">
+                  <img src="/websiteIcon/handshakeLogo.png" alt="Handshake" className="w-5 h-5" style={{filter: 'brightness(0) invert(1) contrast(2) drop-shadow(0 2px 4px rgba(0,0,0,0.3))'}} />
+                  <span className="text-sm font-medium">Handshake</span>
                 </a>
               </div>
             </div>
