@@ -7,20 +7,35 @@ const skillCategories = [
     skills: ["C", "C++", "Python", "Java", "JavaScript", "TypeScript", "SQL", "OCaml"]
   },
   {
-    name: "ML & Data Science",
-    skills: ["PyTorch", "OpenCV", "NumPy", "Pandas", "Matplotlib", "TensorFlow"]
+    name: "AI / ML & Data",
+    skills: [
+      "PyTorch",
+      "OpenCV",
+      "YOLOv8",
+      "CLIP",
+      "TensorFlow",
+      "NumPy",
+      "Pandas",
+      "Matplotlib",
+      "LangChain",
+      "RAG"
+    ]
   },
   {
-    name: "Web Development",
-    skills: ["React", "Vite", "Tailwind CSS", "Flask", "FastAPI", "REST APIs", "HTML/CSS"]
+    name: "Web & Frontend",
+    skills: ["React", "React Router", "Next.js", "Vite", "Tailwind CSS", "TypeScript", "Recharts", "MapLibre GL", "Lucide React", "HTML/CSS"]
+  },
+  {
+    name: "Backend & APIs",
+    skills: ["FastAPI", "Flask", "REST APIs", "Firebase Admin SDK", "Firestore", "Cloud Functions", "Slack API", "OpenAI API", "Gemini"]
   },
   {
     name: "Cloud & DevOps",
-    skills: ["Firebase", "Google Cloud Run", "Docker", "AWS", "GitHub Actions", "Linux"]
+    skills: ["Firebase", "Google Cloud Run", "Docker", "GitHub Actions", "AWS", "Linux"]
   },
   {
     name: "Tools & Version Control",
-    skills: ["Git", "GitHub", "CI/CD", "Firebase Auth", "Firestore", "Cloud Functions"]
+    skills: ["Git", "GitHub", "CI/CD", "Firebase Auth", "Testing", "Analytics"]
   }
 ];
 

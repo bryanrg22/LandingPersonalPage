@@ -84,16 +84,33 @@ const projects = [
   },
   {
     "name": "Swerve",
-    "description": "Winning Full-Stack Project At Caltech's 2025 HackTech Hackathon - 1st Place Dryft AI Challenge",
-    "longDescription": "Lead Developer of Swerve - 1st Place Winner at Caltech's HackTech 2025 Hackathon in the Dryft AI Challenge. Invited by Dryft to SF Neo offices for post-hackathon collaboration.\n\n🎯 **Key Achievements:**\n- Reduced procurement cycle time with \"Hugo\", a LangChain agent routing queries through GPT-3.5-turbo (tool selection) and o4-mini (multi-step reasoning)\n- Implemented Python/Flask APIs using CRUD to ingest CSVs, CAD files, and user uploads into structured Firestore\n- Wired Slack API to surface low-stock recommendations and automated notifications\n\n🛠️ **Technical Implementation:**\n- **Frontend:** React.js with Tailwind CSS, Recharts for data visualization, MapLibre GL for interactive maps\n- **Backend:** Python Flask APIs with Firebase Admin SDK for database interaction\n- **Database:** Firebase Firestore with comprehensive schema (orders, parts, inventory, sales, supply)\n- **AI Integration:** Hugo AI assistant with LangChain, GPT-3.5-turbo, and GPT-4o for procurement insights\n- **Features:** Interactive dashboards, real-time analytics, supply chain mapping, automated notifications\n\n🏆 **Project Impact:** Successfully created a truly proactive procurement assistant that anticipates needs and helps teams stay ahead of challenges in complex supply chain environments.",
-    "skills": [ "React.js", "Tailwind CSS", "Recharts", "MapLibre GL", "Python", "Flask", "Firebase", "Firebase Admin SDK", "LangChain", "GPT-3.5-turbo", "GPT-4o", "Slack API", "Firestore", "CRUD APIs"],
+    "description": "Agentic AI procurement co-pilot • 1st Place – Dryft AI Challenge @ HackTech 2025",
+    "longDescription": "Swerve is an agentic AI co-pilot for industrial procurement: a Voltway electric scooter control center that unifies inventory, orders, suppliers, and sales signals. Built with LangChain-powered agents that turn Firestore ops data into auditable recommendations (not just chat). Post-hackathon, the team was flown to Dryft’s SF Neo offices for collaboration.",
+    "skills": [
+      "React.js",
+      "React Router",
+      "Tailwind CSS",
+      "Recharts",
+      "MapLibre GL",
+      "Lucide React",
+      "Python",
+      "Flask",
+      "Firebase Admin SDK",
+      "Firebase Firestore",
+      "Firebase Auth",
+      "Firebase Storage",
+      "LangChain",
+      "Hugo AI",
+      "Slack Integration"
+    ],
     "videoUrl": "https://youtu.be/wa4kqvqhoZc?si=qjCwxTQl4N-5ri5j",
     "githubUrl": "https://github.com/bryanrg22/CalTech-Hacks",
     "devpostUrl": "https://devpost.com/software/swerve-gqmenk",
     "image": "/projectsLogos/swerveLogo.png",
     "bulletPoints": [
-      "Reduced procurement cycle time with \"Hugo\", a LangChain agent routing queries through GPT-3.5-turbo (tool selection) and o4-mini (multi-step reasoning) to predict inventory gaps, shipped via React + Tailwind CSS",
-      "Implemented Python/Flask APIs using CRUD to ingest CSVs, CAD files, and user uploads into a structured Firestore (orders, parts, inventory, sales, supply) and wired Slack API to surface low-stock recommendations; Invited by Dryft to SF Neo offices for post-hackathon collaboration."
+      "Agentic AI procurement co-pilot: LangChain-powered agents over Firestore ops data that generate auditable, actionable recommendations (not just chat).",
+      "Unified dashboards + automations for inventory, orders, suppliers, and sales; low-stock and lead-time risk detection with Slack insights.",
+      "1st Place – Dryft AI Challenge @ HackTech 2025; flown to Dryft’s SF Neo offices for post-hackathon collaboration."
     ]
   },
   {
