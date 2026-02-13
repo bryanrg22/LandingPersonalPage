@@ -56,6 +56,18 @@ export default function WorkExperience() {
 
   const experiences = [
     {
+      title: "Incoming Software Engineering Intern",
+      company: "Nvidia",
+      date: "Summer 2026",
+      location: "Santa Clara, CA",
+      description: [
+        "Building Agentic AI systems.",
+        "Incoming Summer 2026."
+      ],
+      skills: ["Agentic AI", "Software Engineering"],
+      logo: "/experienceLogos/Nvidia_logo.svg.png"
+    },
+    {
       title: "Software Developer",
       company: "LavaLab — USC's Premier Startup Incubator",
       date: "September 2025 - Present",
